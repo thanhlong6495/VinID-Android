@@ -121,7 +121,7 @@
 
         <EditText
             android:focusableInTouchMode="false"
-            android:onClick="GoToRegisForm"
+            android:onClick="goToRegisForm"
             android:layout_weight="1"
             android:id="@+id/phonenumber"
             android:layout_width="match_parent"

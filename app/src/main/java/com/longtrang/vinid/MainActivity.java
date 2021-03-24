@@ -20,8 +20,8 @@ import android.widget.TextView;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-    EditText edtPhoneNumber;
-    TextView tvphonenumber, tvintroduce_title,tvintroduce_detail,tvVi, tvEn,tvJa;
+    EditText editTextPhoneNumber;
+    TextView textViewPhoneNumber, textViewIntroduceTitle,textViewIntroduceContent,textViewLanguageVietnamese, textViewLanguageEnglish,textViewLanguageJapanese;
     Locale mMyLocale;
 
     @Override
@@ -30,21 +30,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         AnhXa();
 
-        tvVi.setOnClickListener(new View.OnClickListener() {
+        textViewLanguageVietnamese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mMyLocale = new Locale("vi","VN");
                 onChangeLanguage(mMyLocale);
             }
         });
-        tvEn.setOnClickListener(new View.OnClickListener() {
+        textViewLanguageEnglish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mMyLocale = new Locale("en","US");
                 onChangeLanguage(mMyLocale);
             }
         });
-        tvJa.setOnClickListener(new View.OnClickListener() {
+        textViewLanguageJapanese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mMyLocale = new Locale("ja","JP");
@@ -54,13 +54,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void AnhXa(){
-        tvVi               = findViewById(R.id.btnVietnamese);
-        tvEn               = findViewById(R.id.btnEnglish);
-        tvJa               = findViewById(R.id.btnJapanese);
-        edtPhoneNumber      = findViewById(R.id.phonenumber);
-        tvphonenumber       = findViewById(R.id.tvphonenumber);
-        tvintroduce_title   = findViewById(R.id.tvintroduce_title);
-        tvintroduce_detail  = findViewById(R.id.tvintroduce_detail);
+        textViewLanguageVietnamese               = findViewById(R.id.btnVietnamese);
+        textViewLanguageEnglish               = findViewById(R.id.btnEnglish);
+        textViewLanguageJapanese               = findViewById(R.id.btnJapanese);
+        editTextPhoneNumber      = findViewById(R.id.phonenumber);
+        textViewPhoneNumber       = findViewById(R.id.tvphonenumber);
+        textViewIntroduceTitle   = findViewById(R.id.tvintroduce_title);
+        textViewIntroduceContent  = findViewById(R.id.tvintroduce_detail);
 
     }
     public void onChangeLanguage(Locale mMyLocale){
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-    public void GoToRegisForm(View view) {
+    public void goToRegisForm(View view) {
 
         Intent intent = new Intent(MainActivity.this,RegisterForm.class);
         startActivity(intent);
