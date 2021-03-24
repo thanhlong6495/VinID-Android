@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:weightSum="10"
+    android:minHeight="300dp"
+    android:minWidth="400dp"
+    android:layout_alignParentBottom="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/invitation_code_title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/invitation_code_title"
+        android:textSize="22sp"
+        />
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/btn_continue"
+        android:backgroundTint="@color/button_next_background"
+        android:textColor="@color/button_next"/>
+
+</LinearLayout>

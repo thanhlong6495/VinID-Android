@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">VinID</string>
+    <string name="app_intro_title">Tích điểm mọi giao dịch</string>
+    <string name="app_intro_detail">Khi mua hàng tại VinMart và các dịch vụ Vingroup</string>
+    <string name="phone_number_regis">Nhập số điện thoại</string>
+    <string name="phone_number_edit">Số điện thoại của bạn</string>
+    <string name="langugge_vi">" Tiếng Việt"</string>
+    <string name="language_en">Tiếng Anh</string>
+    <string name="language_ja">Tiếng Nhật</string>
+    <string name="invitation_code">Bạn có mã giới thiệu?</string>
+    <string name="app_policy">Bằng việc chọn Tiếp tục, bạn đã đồng ý với ĐIều khoản &amp; Điều kiện cùng Chính sách bảo mật và chia sẻ thông tin của VinID</string>
+    <string name="btn_continue">Tiếp tục</string>
+    <string name="invitation_code_title">Nhập mã giới thiệu</string>
+</resources>

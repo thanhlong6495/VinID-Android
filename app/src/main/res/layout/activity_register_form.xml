@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".RegisterForm">
+    <TextView
+        android:id="@+id/tvphonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number_regis"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <EditText
+        android:onClick="EnterPhoneNumber"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tvphonenumber"
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number_edit"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:inputType="phone" />
+    <TextView
+        android:onClick="InvitationcodeClick"
+        android:id="@+id/invitationcode"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/invitation_code"
+        android:textColor="#1C33B3"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvpolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnnext"
+        android:layout_alignBottom="@+id/phonenumber"
+        android:layout_marginBottom="-391dp"
+        android:text="@string/app_policy"
+        android:textSize="18sp"
+        android:textColor="#709498"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnnext"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_continue"
+        android:backgroundTint="@color/button_next_background"
+        android:textColor="@color/button_next"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+</RelativeLayout>

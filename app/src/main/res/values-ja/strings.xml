@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VinID</string>
+    <string name="app_intro_title">取り引きするとポイントを貯める</string>
+    <string name="app_intro_detail">ヴィンマートで買い物とヴィングループのサービス</string>
+    <string name="phone_number_regis">電話番号を入力してください</string>
+    <string name="phone_number_edit">お客様の電話番号</string>
+    <string name="langugge_vi">ベトナム語</string>
+    <string name="language_en">英語</string>
+    <string name="language_ja">日本語</string>
+    <string name="invitation_code">紹介コードお持ち客様?</string>
+    <string name="app_policy">次へボタンを押すとVinIDの 条項と条件と情報供給ポリシーを同意しました</string>
+    <string name="btn_continue">次へ</string>
+    <string name="invitation_code_title">紹介コード入力</string>
+</resources>

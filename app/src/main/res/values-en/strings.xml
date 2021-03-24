@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VinID</string>
+    <string name="app_intro_title" translatable="true">Earn points instantly</string>
+    <string name="app_intro_detail" translatable="true">With every transaction at VinMart or any Vingroup services</string>
+    <string name="phone_number_regis" translatable="true">Enter the phone here</string>
+    <string name="phone_number_edit" translatable="true">Your phone number</string>
+    <string name="langugge_vi">Vietnamese</string>
+    <string name="language_en">English</string>
+    <string name="language_ja">Japanese</string>
+    <string name="invitation_code">Do you have the invitation code?</string>
+    <string name="app_policy">By continuing to choose, you are agreeing to the Terms &amp; Conditions and Privacy Policy and sharing all VinID information.</string>
+    <string name="btn_continue">Continue</string>
+    <string name="invitation_code_title">Enter invitation code</string>
+</resources>
