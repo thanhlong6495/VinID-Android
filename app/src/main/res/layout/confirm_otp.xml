@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:layout_height="match_parent"
+    style="@style/Activity_Style">
+    <LinearLayout
+        android:id="@+id/linear_title"
+        style="@style/Sub_View4">
+        <ImageView
+            android:onClick="backToPhoneNumberRegister"
+            android:id="@+id/btn_back"
+            style="@style/Sub_View1"
+            android:src="@drawable/icon_back_button"/>
+        <TextView
+            android:id="@+id/tv_otp_guide"
+            style="@style/TextView_Title"
+            android:layout_height="match_parent"
+            android:text="@string/otp_confirm" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/dimen20"
+        android:id="@+id/tv_enter_otp_guide"
+        style="@style/Normal_TextView"
+        android:text="@string/enter_otp_code"
+        android:layout_below="@+id/linear_title" />
+    <LinearLayout
+        android:id="@+id/linear_otp_title"
+        android:weightSum="4"
+        android:layout_below="@+id/tv_enter_otp_guide"
+        style="@style/Sub_View4"
+        android:layout_marginTop="@dimen/dimen30">
+        <EditText
+            android:id="@+id/edt_otp_code"
+            android:layout_weight="3"
+            style="@style/OTP_EditText"
+            android:hint="@string/otp_code_hint"
+            android:inputType="number"
+            android:maxLength="6"/>
+        <TextView
+            android:layout_weight="1"
+            style="@style/Sub_View3"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/linear_otp_title"
+        style="@style/Sub_View1">
+        <TextView
+            android:id="@+id/tv_phonenumber_change"
+            style="@style/Linked_TextView"
+            android:text="@string/phone_number_change"/>
+        <TextView
+            android:id="@+id/tv_OTP_send_again"
+            style="@style/Linked_TextView"
+            android:layout_alignParentRight="true"
+            android:text="@string/otp_send_again"
+            android:gravity="end"/>
+        <Button
+            android:onClick="goToPinCode"
+            android:id="@+id/btn_otp_confirm"
+            style="@style/btn_next"
+            android:text="@string/btn_continue"/>
+    </RelativeLayout>
+</RelativeLayout>

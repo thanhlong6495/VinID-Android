@@ -7,13 +7,22 @@
     <application
         android:allowBackup="true"
         android:configChanges="locale"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_avatar"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/app_avatar"
         android:supportsRtl="true"
         android:theme="@style/Theme.VinID">
-        <activity android:name=".RegisterForm"></activity>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".PinCode"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name=".ConfirmOTP"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name=".PhoneNumberRegister"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name=".MainActivity"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

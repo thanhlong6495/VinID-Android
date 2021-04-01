@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Activity_Style"
+    tools:context=".PhoneNumberRegister">
+    <TextView
+        android:id="@+id/tv_enter_phonenumber_register"
+        style="@style/TextView_Title"
+        android:text="@string/phone_number_regis" />
+    <EditText
+        android:id="@+id/edt_phonenumber_register"
+        style="@style/Number_EditText"
+        android:layout_below="@+id/tv_enter_phonenumber_register"
+        android:layout_marginTop="@dimen/dimen30"
+        android:hint="@string/phone_number_edit" />
+    <TextView
+        android:onClick="clickOnInvitationCode"
+        android:id="@+id/tv_invitation_code"
+        android:layout_marginTop="@dimen/dimen10"
+        android:layout_below="@+id/edt_phonenumber_register"
+        style="@style/Linked_TextView"
+        android:text="@string/invitation_code"
+        android:textColor="@color/linked_text_color" />
+    <LinearLayout
+        style="@style/Sub_View4"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_policy"
+            android:text="@string/app_policy"
+            style="@style/Normal_TextView"
+            android:textColor="@color/policy_text_color"
+            android:layout_marginBottom="@dimen/dimen10"/>
+        <Button
+            android:onClick="goToConfirmOTP"
+            android:id="@+id/btn_next"
+            android:text="@string/btn_continue"
+            style="@style/btn_next"/>
+    </LinearLayout>
+</RelativeLayout>

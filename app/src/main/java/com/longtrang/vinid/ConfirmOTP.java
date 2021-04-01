@@ -1,5 +1,48 @@
 package com.longtrang.vinid;
 
-public class ConfirmOTP {
+import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class ConfirmOTP extends AppCompatActivity {
+    TextView textViewPhonenumberChange, textViewOTPSendAgain, textViewOTPGuide;
+    EditText editTextOTP;
+    Button buttonNext;
+    String phoneNumber;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.confirm_otp);
+        mappingView();
+        editTextOTP.requestFocus();
+        getData();
+    }
+
+    public void mappingView(){
+        textViewOTPGuide            = findViewById(R.id.tv_enter_otp_guide);
+        textViewPhonenumberChange   = findViewById(R.id.tv_phonenumber_change);
+        textViewOTPSendAgain        = findViewById(R.id.tv_OTP_send_again);
+        editTextOTP                 = findViewById(R.id.edt_otp_code);
+        buttonNext                  = findViewById(R.id.btn_otp_confirm);
+    }
+    public void getData(){
+        Intent intent = getIntent();
+        phoneNumber = intent.getStringExtra("phone number");
+        textViewOTPGuide.setText(getResources().getString(R.string.enter_otp_code) + " " + phoneNumber);
+    }
+
+    public void goToPinCode(View view) {
+        startActivity(new Intent(ConfirmOTP.this,PinCode.class));
+    }
+
+    public void backToPhoneNumberRegister(View view) {
+        startActivity(new Intent(ConfirmOTP.this,PhoneNumberRegister.class));
+    }
 }

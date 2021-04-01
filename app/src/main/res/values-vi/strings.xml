@@ -13,4 +13,13 @@
     <string name="app_policy">Bằng việc chọn Tiếp tục, bạn đã đồng ý với ĐIều khoản &amp; Điều kiện cùng Chính sách bảo mật và chia sẻ thông tin của VinID</string>
     <string name="btn_continue">Tiếp tục</string>
     <string name="invitation_code_title">Nhập mã giới thiệu</string>
+    <string name="phone_number_warning">Xin vui lòng nhập số điện thoại</string>
+    <string name="otp_confirm">Mã xác thực OTP</string>
+    <string name="enter_otp_code">Điền OTP vừa được gửi đến số điện thoại </string>
+    <string name="otp_code_hint">000 000</string>
+    <string name="phone_number_change">Đổi số điện thoại</string>
+    <string name="otp_send_again">Gửi lại mã OTP</string>
+    <string name="pin_code_title">Nhập mã PIN</string>
+    <string name="pin_code_content">Mã PIN dùng để đăng nhập, bảo mật và xác thực tài khoản</string>
+    <string name="pin_code_forgot">Quên mã PIN</string>
 </resources>

@@ -3,77 +3,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/edtphone_number"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    style="@style/Activity_Style"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp"
         android:id="@+id/languagebtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        style="@style/Sub_View4"
         android:orientation="horizontal"
         android:weightSum="4.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <ImageView
             android:layout_weight="0.5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Sub_View1"
             android:src="@drawable/vn_flag"/>
-
         <TextView
             android:gravity="center"
             android:id="@+id/btnVietnamese"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            style="@style/Sub_View3"
             android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless"
             android:text="@string/langugge_vi"
-            android:textAllCaps="false"
-            android:textColor="#1A37CC"
-            android:textSize="16sp" />
+            android:textColor="@color/language_text_color"
+            android:textSize="@dimen/text_size16" />
         <ImageView
             android:layout_weight="0.5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Sub_View1"
             android:src="@drawable/en_flag"/>
-
         <TextView
             android:id="@+id/btnEnglish"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            style="@style/Sub_View3"
             android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless"
             android:gravity="center"
             android:text="@string/language_en"
-            android:textAllCaps="false"
-            android:textColor="#1A37CC"
-            android:textSize="16sp" />
+            android:textColor="@color/language_text_color"
+            android:textSize="@dimen/text_size16" />
         <ImageView
             android:layout_weight="0.5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Sub_View1"
             android:src="@drawable/jp_flag"/>
-
         <TextView
             android:id="@+id/btnJapanese"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            style="@style/Sub_View3"
             android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless"
             android:gravity="center"
             android:text="@string/language_ja"
-            android:textAllCaps="false"
-            android:textColor="#1A37CC"
-            android:textSize="16sp" />
+            android:textColor="@color/language_text_color"
+            android:textSize="@dimen/text_size16" />
     </LinearLayout>
-
-
     <LinearLayout
         android:weightSum="10"
         android:layout_width="match_parent"
@@ -81,52 +58,34 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/languagebtn">
-
         <TextView
             android:id="@+id/tvintroduce_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            style="@style/TextView_Title"
+            android:layout_marginTop="@dimen/dimen20"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="@string/app_intro_title"
-            android:textColor="#000"
-            android:textSize="22sp"
-            android:textStyle="bold" />
-
+            android:text="@string/app_intro_title"/>
         <TextView
             android:layout_weight="1"
             android:id="@+id/tvintroduce_detail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/Sub_View4"
             android:gravity="center_horizontal"
             android:text="@string/app_intro_detail"
-            android:textSize="20sp" />
-
+            android:textSize="@dimen/text_size22" />
         <ImageView
             android:layout_weight="2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/Sub_View4"
             android:src="@drawable/pay" />
-
         <TextView
             android:layout_weight="1"
             android:id="@+id/tvphonenumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/phone_number_regis"
-            android:textColor="#000"
-            android:textSize="22sp"
-            android:textStyle="bold" />
-
+            style="@style/TextView_Title"
+            android:text="@string/phone_number_regis" />
         <EditText
             android:focusableInTouchMode="false"
             android:onClick="goToRegisForm"
             android:layout_weight="1"
             android:id="@+id/phonenumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/phone_number_edit" />
-
+            style="@style/Normal_EditText"
+            android:hint="@string/phone_number_edit"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

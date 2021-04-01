@@ -10,6 +10,15 @@
     <string name="language_ja">Japanese</string>
     <string name="invitation_code">Do you have the invitation code?</string>
     <string name="app_policy">By continuing to choose, you are agreeing to the Terms &amp; Conditions and Privacy Policy and sharing all VinID information.</string>
-    <string name="btn_continue">Continue</string>
+    <string name="btn_continue">Next</string>
     <string name="invitation_code_title">Enter invitation code</string>
+    <string name="phone_number_warning">Please enter your phone number</string>
+    <string name="otp_confirm">OTP code confirm</string>
+    <string name="enter_otp_code">Please enter the OTP code was sent to your phone number </string>
+    <string name="otp_code_hint">000 000</string>
+    <string name="phone_number_change">Change the phone number</string>
+    <string name="otp_send_again">OTP send again</string>
+    <string name="pin_code_title">Enter PIN code</string>
+    <string name="pin_code_content">PIN is used for login, security and account authentication</string>
+    <string name="pin_code_forgot">Forgot PIN code</string>
 </resources>

@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RegisterForm extends AppCompatActivity {
+public class PhoneNumberRegister extends AppCompatActivity {
     TextView textViewPhoneNumber, textViewInvitationCode,textViewPolicy;
     EditText editTextPhoneNumber;
     Button buttonNext;
@@ -22,12 +22,10 @@ public class RegisterForm extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_form);
+        setContentView(R.layout.phone_number_register);
         mappingView();
         editTextPhoneNumber.requestFocus();
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE|WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         Intent intent = getIntent();
-
     }
 
     public void mappingView(){
@@ -39,7 +37,7 @@ public class RegisterForm extends AppCompatActivity {
     }
 
     public void clickOnInvitationCode(View view) {
-        Dialog dialog = new Dialog(RegisterForm.this);
+        Dialog dialog = new Dialog(PhoneNumberRegister.this);
         dialog.setContentView(R.layout.dialog_invitation_code);
         dialog.show();
         dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
@@ -53,7 +51,7 @@ public class RegisterForm extends AppCompatActivity {
             Toast.makeText(this, getResources().getString(R.string.phone_number_warning), Toast.LENGTH_LONG).show();
         }
         else{
-            Intent intent = new Intent(RegisterForm.this, ConfirmOTP.class);
+            Intent intent = new Intent(PhoneNumberRegister.this, ConfirmOTP.class);
             intent.putExtra("phone number",phoneNumber);
             startActivity(intent);
         }

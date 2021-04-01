@@ -1,19 +1,13 @@
 package com.longtrang.vinid;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.InputType;
 import android.util.DisplayMetrics;
 import android.view.View;
-import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -28,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        AnhXa();
+        mappingView();
 
         textViewLanguageVietnamese.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    public void AnhXa(){
+    public void mappingView(){
         textViewLanguageVietnamese               = findViewById(R.id.btnVietnamese);
         textViewLanguageEnglish               = findViewById(R.id.btnEnglish);
         textViewLanguageJapanese               = findViewById(R.id.btnJapanese);
@@ -79,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void goToRegisForm(View view) {
 
-        Intent intent = new Intent(MainActivity.this,RegisterForm.class);
+        Intent intent = new Intent(MainActivity.this, PhoneNumberRegister.class);
         startActivity(intent);
 
     }

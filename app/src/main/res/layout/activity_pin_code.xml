@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/Activity_Style"
     tools:context=".PinCode">
+    <LinearLayout
+        android:id="@+id/linear_PIN_title"
+        style="@style/Sub_View4">
+        <ImageView
+            android:onClick="backToConfirmOTP"
+            android:id="@+id/btn_back_PIN"
+            style="@style/Sub_View1"
+            android:src="@drawable/icon_back_button"/>
+        <TextView
+            style="@style/TextView_Title"
+            android:text="@string/pin_code_title"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/PIN_code_guide"
+        android:layout_below="@+id/linear_PIN_title"
+        style="@style/Normal_TextView"
+        android:text="@string/pin_code_content"/>
+    <LinearLayout
+                android:id="@+id/pin_code_field"
+                android:layout_below="@id/PIN_code_guide"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                style="@style/Sub_View4">
+        <EditText
+                    style="@style/PIN_EditText"
+                    android:id="@+id/edt_PIN1"
+                    android:layout_marginRight="@dimen/dimen20"/>
+        <EditText
+                    style="@style/PIN_EditText"
+                    android:id="@+id/edt_PIN2"
+                    android:layout_marginRight="@dimen/dimen20"/>
+        <EditText
+                    style="@style/PIN_EditText"
+                    android:id="@+id/edt_PIN3"
+                    android:layout_marginRight="@dimen/dimen20"/>
+        <EditText
+                    style="@style/PIN_EditText"
+                    android:id="@+id/edt_PIN4"
+                    android:layout_marginRight="@dimen/dimen20"/>
+        <EditText
+                    style="@style/PIN_EditText"
+                    android:id="@+id/edt_PIN5"
+                    android:layout_marginRight="@dimen/dimen20"/>
+        <EditText
+                    style="@style/PIN_EditText"
+                    android:id="@+id/edt_PIN6"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen30"
+        android:weightSum="2"
+        style="@style/Sub_View4"
+        android:layout_below="@+id/pin_code_field">
+        <TextView
+            android:text="@string/phone_number_change"
+            android:layout_weight="1"
+            style="@style/Linked_TextView"/>
+        <TextView
+            android:text="@string/pin_code_forgot"
+            style="@style/Linked_TextView"
+            android:layout_weight="1"
+            android:gravity="end" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <Button
+        android:onClick="goToPersonalInfomation"
+        android:id="@+id/btn_next_PIN_code"
+        style="@style/btn_next"
+        android:text="@string/btn_continue"
+        android:textColor="@color/button_next"
+        />
+</RelativeLayout>
