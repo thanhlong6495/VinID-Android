@@ -17,7 +17,8 @@
     <style name="Activity_Style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_margin">@dimen/dimen10</item>
+        <item name="android:layout_marginLeft">@dimen/dimen10</item>
+        <item name="android:layout_marginRight">@dimen/dimen10</item>
     </style>
     <style name="Sub_View1">
         <item name="android:layout_width">wrap_content</item>
@@ -38,15 +39,15 @@
     <style name="Linked_TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/text_size16</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/linked_text_color</item>
     </style>
     <style name="Normal_TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
     </style>
 
     <style name="TextView_Title">
@@ -56,23 +57,23 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
     </style>
     <style name="Number_EditText">
         <item name="android:inputType">number</item>
-        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">@dimen/text_size22</item>
     </style>
     <style name="Normal_EditText">
-        <item name="android:layout_marginTop">10dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">@dimen/text_size16</item>
     </style>
     <style name="OTP_EditText">
         <item name="android:inputType">number</item>
-        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size22</item>

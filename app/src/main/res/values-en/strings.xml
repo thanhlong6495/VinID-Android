@@ -8,17 +8,24 @@
     <string name="langugge_vi">Vietnamese</string>
     <string name="language_en">English</string>
     <string name="language_ja">Japanese</string>
-    <string name="invitation_code">Do you have the invitation code?</string>
+    <string name="invitation_code">You have the invitation code?</string>
     <string name="app_policy">By continuing to choose, you are agreeing to the Terms &amp; Conditions and Privacy Policy and sharing all VinID information.</string>
     <string name="btn_continue">Next</string>
     <string name="invitation_code_title">Enter invitation code</string>
-    <string name="phone_number_warning">Please enter your phone number</string>
+    <string name="phone_number_warning">Please enter the valid phone number</string>
     <string name="otp_confirm">OTP code confirm</string>
     <string name="enter_otp_code">Please enter the OTP code was sent to your phone number </string>
     <string name="otp_code_hint">000 000</string>
+    <string name="otp_code_warning">OTP code invalid</string>
     <string name="phone_number_change">Change the phone number</string>
     <string name="otp_send_again">OTP send again</string>
     <string name="pin_code_title">Enter PIN code</string>
     <string name="pin_code_content">PIN is used for login, security and account authentication</string>
     <string name="pin_code_forgot">Forgot PIN code</string>
+    <string name="personal_information">Personal information</string>
+    <string name="personal_information_guide">Please complete the personal information to finish account establishment</string>
+    <string name="full_name">Full name</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="email_address">Email</string>
+    <string name="pin_code_warning">PIN code invalid</string>
 </resources>

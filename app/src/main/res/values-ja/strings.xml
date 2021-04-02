@@ -13,12 +13,20 @@
     <string name="app_policy">次へボタンを押すとVinIDの 条項と条件と情報供給ポリシーを同意しました</string>
     <string name="btn_continue">次へ</string>
     <string name="invitation_code_title">紹介コード入力</string>
-    <string name="phone_number_warning">電話番号入力して下さい</string>
+    <string name="phone_number_warning">有効電話番号入力して下さい</string>
     <string name="otp_confirm">OTPコード確認</string>
     <string name="enter_otp_code">送信されたOTPコード入力して下さい着信電話番号 </string>
     <string name="otp_code_hint">000 000</string>
+    <string name="otp_code_warning">OTPコード無効</string>
     <string name="phone_number_change">電話番号変更</string>
     <string name="otp_send_again">OTPコード送り直し</string>
     <string name="pin_code_title">PIN コード入力</string>
     <string name="pin_code_content">PINコードは、ログイン、セキュリティ、アカウント認証に使用されます</string>
+    <string name="pin_code_forgot">PIN コード忘れ</string>
+    <string name="personal_information">個人情報</string>
+    <string name="personal_information_guide">アカウント解説のため個人情報を入力して下さい</string>
+    <string name="full_name">フルネーム</string>
+    <string name="date_of_birth">生年月日</string>
+    <string name="email_address">メール</string>
+    <string name="pin_code_warning">PINコード無効</string>
 </resources>

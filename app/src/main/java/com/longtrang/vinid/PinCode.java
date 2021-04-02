@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class PinCode extends AppCompatActivity {
     Button buttonNext;
@@ -37,6 +38,12 @@ public class PinCode extends AppCompatActivity {
     }
 
     public void goToPersonalInfomation(View view) {
+        if(editTextPin1.length() >0 && editTextPin2.length() > 0 && editTextPin3.length() > 0 && editTextPin4.length() > 0 && editTextPin5.length() > 0 && editTextPin6.length() > 0){
+            startActivity(new Intent(PinCode.this,PersonalInformation.class));
+        }
+        else {
+            Toast.makeText(this, getResources().getString(R.string.pin_code_warning), Toast.LENGTH_LONG).show();
+        }
     }
     public void backToConfirmOTP(View view) {
         startActivity(new Intent(PinCode.this,ConfirmOTP.class));

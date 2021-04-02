@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VinID">
         <activity
+            android:name=".PersonalInformation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name=".PinCode"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity

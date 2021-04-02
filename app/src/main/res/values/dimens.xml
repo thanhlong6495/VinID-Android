@@ -8,5 +8,6 @@
     <dimen name="dimen30">30dp</dimen>
     <dimen name="text_size22">22sp</dimen>
     <dimen name="text_size16">16sp</dimen>
+    <dimen name="text_size14">14sp</dimen>
     <dimen name="text_size25">25sp</dimen>
 </resources>

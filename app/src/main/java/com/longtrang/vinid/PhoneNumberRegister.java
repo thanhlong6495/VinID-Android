@@ -47,7 +47,7 @@ public class PhoneNumberRegister extends AppCompatActivity {
 
     public void goToConfirmOTP(View view) {
         phoneNumber = editTextPhoneNumber.getText().toString().trim();
-        if(phoneNumber.isEmpty()){
+        if(phoneNumber.isEmpty() || phoneNumber.length() != 10){
             Toast.makeText(this, getResources().getString(R.string.phone_number_warning), Toast.LENGTH_LONG).show();
         }
         else{
