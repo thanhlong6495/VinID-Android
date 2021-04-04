@@ -87,6 +87,11 @@
         <item name="android:textStyle">bold</item>
         <item name="android:maxLength">1</item>
         <item name="background">@color/white</item>
-
+    </style>
+    <style name="Date_Picker">
+        <item name="android:startYear">1900</item>
+        <item name="android:calendarViewShown">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 </resources>

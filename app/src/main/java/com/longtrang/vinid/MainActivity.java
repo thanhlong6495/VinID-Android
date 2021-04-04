@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mappingView();
-
         textViewLanguageVietnamese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,36 +44,32 @@ public class MainActivity extends AppCompatActivity {
                 onChangeLanguage(mMyLocale);
             }
         });
-
     }
-    public void mappingView(){
-        textViewLanguageVietnamese               = findViewById(R.id.btnVietnamese);
-        textViewLanguageEnglish               = findViewById(R.id.btnEnglish);
-        textViewLanguageJapanese               = findViewById(R.id.btnJapanese);
-        editTextPhoneNumber      = findViewById(R.id.phonenumber);
-        textViewPhoneNumber       = findViewById(R.id.tvphonenumber);
-        textViewIntroduceTitle   = findViewById(R.id.tvintroduce_title);
-        textViewIntroduceContent  = findViewById(R.id.tvintroduce_detail);
-
+    public void mappingView() {
+        textViewLanguageVietnamese  = findViewById(R.id.btnVietnamese);
+        textViewLanguageEnglish     = findViewById(R.id.btnEnglish);
+        textViewLanguageJapanese    = findViewById(R.id.btnJapanese);
+        editTextPhoneNumber         = findViewById(R.id.phonenumber);
+        textViewPhoneNumber         = findViewById(R.id.tvphonenumber);
+        textViewIntroduceTitle      = findViewById(R.id.tvintroduce_title);
+        textViewIntroduceContent    = findViewById(R.id.tvintroduce_detail);
     }
-    public void onChangeLanguage(Locale mMyLocale){
+    public void onChangeLanguage(Locale mMyLocale) {
         DisplayMetrics displayMetrics = getBaseContext().getResources().getDisplayMetrics();
         Configuration configuration = new Configuration();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             configuration.setLocale(mMyLocale);
-        }else{
+        }
+        else {
             configuration.locale = mMyLocale;
         }
-
         getBaseContext().getResources().updateConfiguration(configuration,displayMetrics);
         Intent intent = new Intent(MainActivity.this,MainActivity.class);
         startActivity(intent);
         finish();
     }
     public void goToRegisForm(View view) {
-
         Intent intent = new Intent(MainActivity.this, PhoneNumberRegister.class);
         startActivity(intent);
-
     }
 }

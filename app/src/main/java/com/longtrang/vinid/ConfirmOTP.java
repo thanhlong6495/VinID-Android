@@ -25,7 +25,7 @@ public class ConfirmOTP extends AppCompatActivity {
         getData();
     }
 
-    public void mappingView(){
+    public void mappingView() {
         textViewOTPGuide            = findViewById(R.id.tv_enter_otp_guide);
         textViewPhonenumberChange   = findViewById(R.id.tv_phonenumber_change);
         textViewOTPSendAgain        = findViewById(R.id.tv_OTP_send_again);

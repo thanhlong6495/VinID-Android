@@ -28,14 +28,13 @@ public class PhoneNumberRegister extends AppCompatActivity {
         Intent intent = getIntent();
     }
 
-    public void mappingView(){
+    public void mappingView() {
         textViewPhoneNumber     = findViewById(R.id.tv_enter_phonenumber_register);
         textViewInvitationCode  = findViewById(R.id.tv_invitation_code);
         textViewPolicy          = findViewById(R.id.tv_policy);
         editTextPhoneNumber     = findViewById(R.id.edt_phonenumber_register);
         buttonNext              = findViewById(R.id.btn_next);
     }
-
     public void clickOnInvitationCode(View view) {
         Dialog dialog = new Dialog(PhoneNumberRegister.this);
         dialog.setContentView(R.layout.dialog_invitation_code);
@@ -44,17 +43,15 @@ public class PhoneNumberRegister extends AppCompatActivity {
         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
     }
-
     public void goToConfirmOTP(View view) {
         phoneNumber = editTextPhoneNumber.getText().toString().trim();
-        if(phoneNumber.isEmpty() || phoneNumber.length() != 10){
+        if (phoneNumber.length() != 10) {
             Toast.makeText(this, getResources().getString(R.string.phone_number_warning), Toast.LENGTH_LONG).show();
         }
-        else{
+        else {
             Intent intent = new Intent(PhoneNumberRegister.this, ConfirmOTP.class);
             intent.putExtra("phone number",phoneNumber);
             startActivity(intent);
         }
-
     }
 }
