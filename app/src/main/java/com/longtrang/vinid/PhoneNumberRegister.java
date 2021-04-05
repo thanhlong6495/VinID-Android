@@ -15,7 +15,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PhoneNumberRegister extends AppCompatActivity {
-    TextView textViewPhoneNumber, textViewInvitationCode,textViewPolicy;
+    TextView textViewPhoneNumber;
+    TextView textViewInvitationCode;
+    TextView textViewPolicy;
     EditText editTextPhoneNumber;
     Button buttonNext;
     String phoneNumber;
@@ -25,7 +27,6 @@ public class PhoneNumberRegister extends AppCompatActivity {
         setContentView(R.layout.phone_number_register);
         mappingView();
         editTextPhoneNumber.requestFocus();
-        Intent intent = getIntent();
     }
 
     public void mappingView() {
@@ -50,7 +51,7 @@ public class PhoneNumberRegister extends AppCompatActivity {
         }
         else {
             Intent intent = new Intent(PhoneNumberRegister.this, ConfirmOTP.class);
-            intent.putExtra("phone number",phoneNumber);
+            intent.putExtra("phonenumber",phoneNumber);
             startActivity(intent);
         }
     }

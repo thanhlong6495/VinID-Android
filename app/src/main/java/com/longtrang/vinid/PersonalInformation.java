@@ -12,8 +12,11 @@ import android.widget.EditText;
 
 public class PersonalInformation extends AppCompatActivity {
     FragmentManager fragmentManager = getFragmentManager();
-    EditText editTextFullName, editTextDateOfBirth, editTextEmail;
-    Button buttonNext, buttonDone;
+    EditText editTextFullName;
+    EditText editTextDateOfBirth;
+    EditText editTextEmail;
+    Button buttonNext;
+    Button buttonDone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -15,7 +15,12 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     EditText editTextPhoneNumber;
-    TextView textViewPhoneNumber, textViewIntroduceTitle,textViewIntroduceContent,textViewLanguageVietnamese, textViewLanguageEnglish,textViewLanguageJapanese;
+    TextView textViewPhoneNumber;
+    TextView textViewIntroduceTitle;
+    TextView textViewIntroduceContent;
+    TextView textViewLanguageVietnamese;
+    TextView textViewLanguageJapanese;
+    TextView textViewLanguageEnglish;
     Locale mMyLocale;
 
     @Override
@@ -25,21 +30,21 @@ public class MainActivity extends AppCompatActivity {
         mappingView();
         textViewLanguageVietnamese.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 mMyLocale = new Locale("vi","VN");
                 onChangeLanguage(mMyLocale);
             }
         });
         textViewLanguageEnglish.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 mMyLocale = new Locale("en","US");
                 onChangeLanguage(mMyLocale);
             }
         });
         textViewLanguageJapanese.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 mMyLocale = new Locale("ja","JP");
                 onChangeLanguage(mMyLocale);
             }

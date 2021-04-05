@@ -10,12 +10,16 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 public class PinCode extends AppCompatActivity {
     Button buttonNext;
-    EditText editTextPin1, editTextPin2, editTextPin3, editTextPin4,editTextPin5, editTextPin6;
+    EditText editTextPin1;
+    EditText editTextPin2;
+    EditText editTextPin3;
+    EditText editTextPin4;
+    EditText editTextPin5;
+    EditText editTextPin6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,11 +27,10 @@ public class PinCode extends AppCompatActivity {
         mappingView();
         editTextPin1.requestFocus();
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE|WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
-        Intent intent = getIntent();
         controlCursor();
     }
 
-    public void mappingView(){
+    public void mappingView() {
         editTextPin1    = findViewById(R.id.edt_PIN1);
         editTextPin2    = findViewById(R.id.edt_PIN2);
         editTextPin3    = findViewById(R.id.edt_PIN3);
@@ -38,7 +41,7 @@ public class PinCode extends AppCompatActivity {
     }
 
     public void goToPersonalInfomation(View view) {
-        if(editTextPin1.length() >0 && editTextPin2.length() > 0 && editTextPin3.length() > 0 && editTextPin4.length() > 0 && editTextPin5.length() > 0 && editTextPin6.length() > 0){
+        if (editTextPin1.length() > 0 && editTextPin2.length() > 0 && editTextPin3.length() > 0 && editTextPin4.length() > 0 && editTextPin5.length() > 0 && editTextPin6.length() > 0){
             startActivity(new Intent(PinCode.this,PersonalInformation.class));
         }
         else {
@@ -48,73 +51,83 @@ public class PinCode extends AppCompatActivity {
     public void backToConfirmOTP(View view) {
         startActivity(new Intent(PinCode.this,ConfirmOTP.class));
     }
-    public void controlCursor(){
+    public void controlCursor() {
         editTextPin1.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            public void beforeTextChanged(CharSequence string, int start, int count, int after) {
+                //To Do
             }
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            public void onTextChanged(CharSequence string, int start, int before, int count) {
+                //To Do
             }
             @Override
-            public void afterTextChanged(Editable s) {
-                if(s.length() > 0){
+            public void afterTextChanged(Editable string) {
+                if (string.length() > 0) {
                     editTextPin2.requestFocus();
                 }
             }
         });
         editTextPin2.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            public void beforeTextChanged(CharSequence string, int start, int count, int after) {
+                //To Do
             }
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            public void onTextChanged(CharSequence string, int start, int before, int count) {
+                //To Do
             }
             @Override
-            public void afterTextChanged(Editable s) {
-                if(s.length() > 0){
+            public void afterTextChanged(Editable string) {
+                if (string.length() > 0) {
                     editTextPin3.requestFocus();
                 }
             }
         });
         editTextPin3.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            public void beforeTextChanged(CharSequence string, int start, int count, int after) {
+                //To Do
             }
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            public void onTextChanged(CharSequence string, int start, int before, int count) {
+                //To Do
             }
             @Override
-            public void afterTextChanged(Editable s) {
-                if(s.length() > 0){
+            public void afterTextChanged(Editable string) {
+                if (string.length() > 0) {
                     editTextPin4.requestFocus();
                 }
             }
         });
         editTextPin4.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            public void beforeTextChanged(CharSequence string, int start, int count, int after) {
+                //To Do
             }
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            public void onTextChanged(CharSequence string, int start, int before, int count) {
+                //To Do
             }
             @Override
-            public void afterTextChanged(Editable s) {
-                if(s.length() > 0){
+            public void afterTextChanged(Editable string) {
+                if (string.length() > 0) {
                     editTextPin5.requestFocus();
                 }
             }
         });
         editTextPin5.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            public void beforeTextChanged(CharSequence string, int start, int count, int after) {
+                //To Do
             }
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            public void onTextChanged(CharSequence string, int start, int before, int count) {
+                //To Do
             }
             @Override
-            public void afterTextChanged(Editable s) {
-                if(s.length() > 0){
+            public void afterTextChanged(Editable string) {
+                if (string.length() > 0) {
                     editTextPin6.requestFocus();
                 }
             }

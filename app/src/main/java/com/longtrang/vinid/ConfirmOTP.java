@@ -11,7 +11,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ConfirmOTP extends AppCompatActivity {
-    TextView textViewPhonenumberChange, textViewOTPSendAgain, textViewOTPGuide;
+    TextView textViewPhonenumberChange;
+    TextView textViewOTPSendAgain;
+    TextView textViewOTPGuide;
     EditText editTextOTP;
     Button buttonNext;
     String phoneNumber;
@@ -34,7 +36,7 @@ public class ConfirmOTP extends AppCompatActivity {
     }
     public void getData(){
         Intent intent = getIntent();
-        phoneNumber = intent.getStringExtra("phone number");
+        phoneNumber = intent.getStringExtra("phonenumber");
         textViewOTPGuide.setText(getResources().getString(R.string.enter_otp_code) + " " + phoneNumber);
     }
 
