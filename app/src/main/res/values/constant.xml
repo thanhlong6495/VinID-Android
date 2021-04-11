@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="phone_number">10</integer>
+    <integer name="pin_code">6</integer>
+    <integer name="otp_code">6</integer>
+</resources>

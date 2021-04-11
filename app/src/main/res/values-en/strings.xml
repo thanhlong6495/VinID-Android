@@ -29,4 +29,5 @@
     <string name="date_of_birth">Date of birth</string>
     <string name="email_address">Email</string>
     <string name="done_button">Done</string>
+    <string name="date_picker_title">Select Date</string>
 </resources>

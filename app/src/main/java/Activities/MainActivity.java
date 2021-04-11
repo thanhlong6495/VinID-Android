@@ -1,4 +1,4 @@
-package com.longtrang.vinid;
+package Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.longtrang.vinid.R;
+
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
     TextView textViewLanguageVietnamese;
     TextView textViewLanguageJapanese;
     TextView textViewLanguageEnglish;
-    Locale mMyLocale;
+    Locale   mMyLocale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mappingView();
+        assigningView();
         textViewLanguageVietnamese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void mappingView() {
+    public void assigningView() {
         textViewLanguageVietnamese  = findViewById(R.id.btnVietnamese);
         textViewLanguageEnglish     = findViewById(R.id.btnEnglish);
         textViewLanguageJapanese    = findViewById(R.id.btnJapanese);

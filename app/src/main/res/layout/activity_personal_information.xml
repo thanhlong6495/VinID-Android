@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Activity_Style"
-    tools:context=".PersonalInformation">
+    tools:context="Activities.PersonalInformation">
 
     <LinearLayout
         style="@style/Sub_View2"
@@ -32,7 +32,6 @@
                 android:focusable="false"
                 android:hint="@string/date_of_birth"
                 android:onClick="showDatePickerDialog" />
-
             <ImageView
                 style="@style/Sub_View1"
                 android:layout_gravity="right|center_vertical"
@@ -50,15 +49,7 @@
             android:id="@+id/tv_invitation_code_personal_information"
             style="@style/Linked_TextView"
             android:text="@string/invitation_code" />
-
     </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/framelayout_fragment_date_picker"
-        android:layout_alignParentBottom="true"
-        style="@style/Sub_View2">
-
-    </FrameLayout>
     <Button
         android:id="@+id/btn_next_personal_information"
         style="@style/btn_next"

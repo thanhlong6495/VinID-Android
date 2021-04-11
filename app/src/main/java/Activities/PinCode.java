@@ -1,4 +1,4 @@
-package com.longtrang.vinid;
+package Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,8 +12,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.longtrang.vinid.R;
+
 public class PinCode extends AppCompatActivity {
-    Button buttonNext;
+    Button   buttonNext;
     EditText editTextPin1;
     EditText editTextPin2;
     EditText editTextPin3;
@@ -24,13 +26,13 @@ public class PinCode extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pin_code);
-        mappingView();
+        assigningView();
         editTextPin1.requestFocus();
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE|WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         controlCursor();
     }
 
-    public void mappingView() {
+    public void assigningView() {
         editTextPin1    = findViewById(R.id.edt_PIN1);
         editTextPin2    = findViewById(R.id.edt_PIN2);
         editTextPin3    = findViewById(R.id.edt_PIN3);
@@ -42,14 +44,14 @@ public class PinCode extends AppCompatActivity {
 
     public void goToPersonalInfomation(View view) {
         if (editTextPin1.length() > 0 && editTextPin2.length() > 0 && editTextPin3.length() > 0 && editTextPin4.length() > 0 && editTextPin5.length() > 0 && editTextPin6.length() > 0){
-            startActivity(new Intent(PinCode.this,PersonalInformation.class));
+            startActivity(new Intent(PinCode.this, PersonalInformation.class));
         }
         else {
             Toast.makeText(this, getResources().getString(R.string.pin_code_warning), Toast.LENGTH_LONG).show();
         }
     }
     public void backToConfirmOTP(View view) {
-        startActivity(new Intent(PinCode.this,ConfirmOTP.class));
+        startActivity(new Intent(PinCode.this, ConfirmOTP.class));
     }
     public void controlCursor() {
         editTextPin1.addTextChangedListener(new TextWatcher() {

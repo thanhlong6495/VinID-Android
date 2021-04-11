@@ -2,14 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Activity_Style"
-    tools:context=".PhoneNumberRegister">
+    tools:context="Activities.PhoneNumberRegister">
     <TextView
         android:id="@+id/tv_enter_phonenumber_register"
         style="@style/TextView_Title"
         android:text="@string/phone_number_regis" />
     <EditText
         android:id="@+id/edt_phonenumber_register"
-        style="@style/Number_EditText"
+        style="@style/Phone_Number_EditText"
         android:layout_below="@+id/tv_enter_phonenumber_register"
         android:layout_marginTop="@dimen/dimen30"
         android:hint="@string/phone_number_edit" />
