@@ -13,19 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VinID">
         <activity
-            android:name=".PersonalInformation"
+            android:name="Activities.PersonalInformation"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".PinCode"
+            android:name="Activities.PinCode"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity
-            android:name=".ConfirmOTP"
+            android:name="Activities.ConfirmOTP"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity
-            android:name=".PhoneNumberRegister"
+            android:name="Activities.PhoneNumberRegister"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity
-            android:name=".MainActivity"
+            android:name="Activities.MainActivity"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

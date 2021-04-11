@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Date_Picker">
+    <style name="Date_Picker_Dialog_Fragment" parent="@android:style/Widget.Material.DatePicker">
         <item name="android:datePickerMode">spinner</item>
         <item name="android:calendarViewShown">false</item>
         <item name="android:layout_width">match_parent</item>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/fragment_date_picker"
+    xmlns:android="http://schemas.android.com/apk/res/android" style="@style/Activity_Style"
+    android:orientation="vertical">
+    <LinearLayout
+        android:weightSum="10"
+        style="@style/Sub_View4"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/img_btn_close_date_picker_dialog"
+            android:layout_weight="1"
+            style="@style/Sub_View1"
+            android:src="@drawable/img_button_close"/>
+        <TextView
+            android:layout_weight="9"
+            style="@style/TextView_Title"
+            android:layout_height="match_parent"
+            android:text="@string/date_picker_title" />
+    </LinearLayout>
+    <DatePicker
+        android:id="@+id/date_picker_spinner"
+        style="@style/Date_Picker_Dialog_Fragment" />
+    <Button
+        android:id="@+id/btn_done_date_picker"
+        style="@style/btn_done"
+        android:text="@string/done_button"
+        />
+</LinearLayout>

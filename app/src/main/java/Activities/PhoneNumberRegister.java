@@ -1,4 +1,4 @@
-package com.longtrang.vinid;
+package Activities;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -14,22 +14,24 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.longtrang.vinid.R;
+
 public class PhoneNumberRegister extends AppCompatActivity {
     TextView textViewPhoneNumber;
     TextView textViewInvitationCode;
     TextView textViewPolicy;
     EditText editTextPhoneNumber;
-    Button buttonNext;
-    String phoneNumber;
+    Button   buttonNext;
+    String   phoneNumber;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.phone_number_register);
-        mappingView();
+        assigningView();
         editTextPhoneNumber.requestFocus();
     }
 
-    public void mappingView() {
+    public void assigningView() {
         textViewPhoneNumber     = findViewById(R.id.tv_enter_phonenumber_register);
         textViewInvitationCode  = findViewById(R.id.tv_invitation_code);
         textViewPolicy          = findViewById(R.id.tv_policy);
@@ -46,7 +48,7 @@ public class PhoneNumberRegister extends AppCompatActivity {
     }
     public void goToConfirmOTP(View view) {
         phoneNumber = editTextPhoneNumber.getText().toString().trim();
-        if (phoneNumber.length() != 10) {
+        if (phoneNumber.length() < getResources().getInteger(R.integer.phone_number)) {
             Toast.makeText(this, getResources().getString(R.string.phone_number_warning), Toast.LENGTH_LONG).show();
         }
         else {

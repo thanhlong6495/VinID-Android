@@ -5,7 +5,7 @@
     android:id="@+id/edtphone_number"
     style="@style/Activity_Style"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="Activities.MainActivity">
 
     <LinearLayout
         android:id="@+id/languagebtn"
