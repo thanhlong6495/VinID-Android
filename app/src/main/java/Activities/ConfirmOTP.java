@@ -41,7 +41,6 @@ public class ConfirmOTP extends AppCompatActivity {
         phoneNumber = intent.getStringExtra("phonenumber");
         textViewOTPGuide.setText(getResources().getString(R.string.enter_otp_code) + " " + phoneNumber);
     }
-
     public void goToPinCode(View view) {
         if (editTextOTP.length() == getResources().getInteger(R.integer.otp_code)) {
             startActivity(new Intent(ConfirmOTP.this, PinCode.class));

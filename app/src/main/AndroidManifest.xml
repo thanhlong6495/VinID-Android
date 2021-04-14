@@ -12,6 +12,7 @@
         android:roundIcon="@drawable/app_avatar"
         android:supportsRtl="true"
         android:theme="@style/Theme.VinID">
+        <activity android:name="Activities.TopicService"></activity>
         <activity
             android:name="Activities.PersonalInformation"
             android:windowSoftInputMode="stateAlwaysHidden" />

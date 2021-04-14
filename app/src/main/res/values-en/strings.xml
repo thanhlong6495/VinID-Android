@@ -30,4 +30,16 @@
     <string name="email_address">Email</string>
     <string name="done_button">Done</string>
     <string name="date_picker_title">Select Date</string>
+    <string name="skip">Skip</string>
+    <string name="service_hint">Choose the service you are interested in, VinID will suggest you more exactly</string>
+    <string name="eat_and_drink">Eating</string>
+    <string name="shopping">Shopping</string>
+    <string name="Vincom">Vincom</string>
+    <string name="Vinhomes">Vinhomes</string>
+    <string name="save_and_spend_point">Saving, spending point</string>
+    <string name="home_helper">Home helper</string>
+    <string name="buy_ticket">Buy ticket</string>
+    <string name="payment_water_electric">Payment water and electric</string>
+    <string name="voucher">Voucher</string>
+    <string name="begin_using">Begin using</string>
 </resources>

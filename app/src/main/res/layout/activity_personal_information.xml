@@ -9,22 +9,19 @@
         style="@style/Sub_View2"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true">
         <TextView
             style="@style/TextView_Title"
             android:text="@string/personal_information" />
-
         <TextView
             style="@style/Normal_TextView"
             android:text="@string/personal_information_guide" />
-
         <EditText
             android:id="@+id/edt_full_name"
             style="@style/Normal_EditText"
             android:hint="@string/full_name"
             android:inputType="textPersonName" />
-
         <FrameLayout style="@style/Sub_View4">
             <EditText
                 android:id="@+id/edt_date_of_birth"
@@ -39,18 +36,17 @@
                 android:layout_marginRight="@dimen/dimen10"
                 android:src="@drawable/icon_callendar" />
         </FrameLayout>
-
         <EditText
             android:id="@+id/edt_email"
             style="@style/Normal_EditText"
             android:hint="@string/email_address" />
-
         <TextView
             android:id="@+id/tv_invitation_code_personal_information"
             style="@style/Linked_TextView"
             android:text="@string/invitation_code" />
     </LinearLayout>
     <Button
+        android:onClick="goToTopicService"
         android:id="@+id/btn_next_personal_information"
         style="@style/btn_next"
         android:text="@string/btn_continue"/>

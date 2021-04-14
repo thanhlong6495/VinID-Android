@@ -4,13 +4,19 @@
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="button_next">#0A12AE</color>
-    <color name="button_next_background">#BAC5CD</color>
-    <color name="button_language">#1A37CC</color>
+    <!--text-->
     <color name="policy_text_color">#709498</color>
     <color name="linked_text_color">#1C33B3</color>
-    <color name="language_text_color">#1A37CC</color>
+    <color name="language_text_color">#0715D5</color>
+
+    <!--button-->
+    <color name="button_language">#1A37CC</color>
+    <color name="button_enable">#809CA3</color>
+    <color name="button_unable">#A1BDCC</color>
+    <color name="button_of_text_enable">#0715D5</color>
+    <color name="button_of_text_unable">#5E75B1</color>
+    <color name="toggle_button_unable">#A1BDCC</color>
+    <color name="toggle_button_enable">#785EEC</color>
 </resources>

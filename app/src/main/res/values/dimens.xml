@@ -10,4 +10,7 @@
     <dimen name="text_size16">16sp</dimen>
     <dimen name="text_size14">14sp</dimen>
     <dimen name="text_size25">25sp</dimen>
+    <dimen name="text_size20">20sp</dimen>
+    <dimen name="text_size18">18sp</dimen>
+    <dimen name="toggle_button_corner">20dp</dimen>
 </resources>

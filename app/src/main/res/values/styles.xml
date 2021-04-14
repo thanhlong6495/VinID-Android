@@ -8,8 +8,8 @@
         <item name="android:textSize">@dimen/text_size22</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="backgroundTint">@color/button_next_background</item>
-        <item name="android:textColor">@color/button_next</item>
+        <item name="backgroundTint">@color/button_unable</item>
+        <item name="android:textColor">@color/button_of_text_unable</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="textAllCaps">false</item>
         <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
@@ -22,15 +22,14 @@
         <item name="android:textSize">@dimen/text_size22</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="backgroundTint">@color/button_next_background</item>
-        <item name="android:textColor">@color/button_next</item>
+        <item name="backgroundTint">@color/button_unable</item>
+        <item name="android:textColor">@color/button_of_text_unable</item>
         <item name="textAllCaps">false</item>
     </style>
     <style name="Activity_Style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_marginLeft">@dimen/dimen10</item>
-        <item name="android:layout_marginRight">@dimen/dimen10</item>
+        <item name="android:layout_margin">@dimen/dimen10</item>
     </style>
     <style name="Sub_View1">
         <item name="android:layout_width">wrap_content</item>
@@ -59,6 +58,14 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+    </style>
+    <style name="TextView_Hint">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size20</item>
         <item name="android:layout_marginTop">@dimen/dimen10</item>
     </style>
 
@@ -109,5 +116,14 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/dimen10</item>
+    </style>
+    <style name="btn_choose_topic">
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:layout_marginRight">@dimen/dimen10</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="textAllCaps">false</item>
     </style>
 </resources>

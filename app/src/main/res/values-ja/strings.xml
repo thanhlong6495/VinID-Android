@@ -31,4 +31,16 @@
     <string name="pin_code_warning">PINコード無効</string>
     <string name="done_button">終了</string>
     <string name="date_picker_title">日選択</string>
+    <string name="skip">後で</string>
+    <string name="service_hint">興味のあるサービスを選択してください。VinIDがより正確に提案します</string>
+    <string name="eat_and_drink">飲食</string>
+    <string name="shopping">ショッピング</string>
+    <string name="Vincom">ヴィンコム</string>
+    <string name="Vinhomes">ヴィンホムズ</string>
+    <string name="save_and_spend_point">ポイント蓄積、交換</string>
+    <string name="home_helper">手伝い</string>
+    <string name="buy_ticket">チケット購入</string>
+    <string name="payment_water_electric">清算電気代、水代</string>
+    <string name="voucher">バウチャー</string>
+    <string name="begin_using">使用を始めます</string>
 </resources>

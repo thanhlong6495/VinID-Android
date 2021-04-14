@@ -71,7 +71,5 @@
         android:onClick="goToPersonalInfomation"
         android:id="@+id/btn_next_PIN_code"
         style="@style/btn_next"
-        android:text="@string/btn_continue"
-        android:textColor="@color/button_next"
-        />
+        android:text="@string/btn_continue" />
 </RelativeLayout>

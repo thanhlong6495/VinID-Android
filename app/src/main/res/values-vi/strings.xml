@@ -31,4 +31,16 @@
     <string name="email_address">Email</string>
     <string name="done_button">Xong</string>
     <string name="date_picker_title">Chọn ngày</string>
+    <string name="skip">Để sau</string>
+    <string name="service_hint">Chọn dịch vụ bạn quan tâm, VinID sẽ gợi ý cho bạn chính xác hơn</string>
+    <string name="eat_and_drink">Ăn uống</string>
+    <string name="shopping">Mua sắm</string>
+    <string name="Vincom">Vincom</string>
+    <string name="Vinhomes">Vinhomes</string>
+    <string name="save_and_spend_point">Tích, tiêu điểm</string>
+    <string name="home_helper">Giúp việc</string>
+    <string name="buy_ticket">Mua vé</string>
+    <string name="payment_water_electric">Thanh toán điện nước</string>
+    <string name="voucher">Voucher</string>
+    <string name="begin_using">Bắt đầu sử dụng</string>
 </resources>
