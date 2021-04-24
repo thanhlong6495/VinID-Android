@@ -19,6 +19,7 @@
     <string name="otp_code_warning">OTP code invalid</string>
     <string name="phone_number_change">Change the phone number</string>
     <string name="otp_send_again">OTP send again</string>
+    <string name="otp_time_warning">Time up! Please touch "OTP send again"</string>
     <string name="pin_code_title">Enter PIN code</string>
     <string name="pin_code_content">PIN is used for login, security and account authentication</string>
     <string name="pin_code_forgot">Forgot PIN code</string>

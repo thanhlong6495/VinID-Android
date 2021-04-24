@@ -35,8 +35,9 @@
             style="@style/OTP_EditText"
             android:hint="@string/otp_code_hint" />
         <TextView
+            android:id="@+id/tv_countdown_timer"
             android:layout_weight="1"
-            style="@style/Sub_View3"/>
+            style="@style/CountDownTimer"/>
     </LinearLayout>
     <RelativeLayout
         android:layout_below="@+id/linear_otp_title"

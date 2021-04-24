@@ -20,6 +20,7 @@
     <string name="otp_code_warning">OTPコード無効</string>
     <string name="phone_number_change">電話番号変更</string>
     <string name="otp_send_again">OTPコード送り直し</string>
+    <string name="otp_time_warning">時間です！　"OTPコード送り直し"を押して下さい</string>
     <string name="pin_code_title">PIN コード入力</string>
     <string name="pin_code_content">PINコードは、ログイン、セキュリティ、アカウント認証に使用されます</string>
     <string name="pin_code_forgot">PIN コード忘れ</string>

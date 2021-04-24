@@ -21,6 +21,7 @@
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity
             android:name="Activities.ConfirmOTP"
+            android:exported="true"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity
             android:name="Activities.PhoneNumberRegister"
