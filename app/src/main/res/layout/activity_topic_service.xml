@@ -2,10 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Activity_Style"
-    tools:context="Activities.TopicService"
+    tools:context="RegisterActivities.TopicService"
     android:orientation="vertical">
 
     <TextView
+        android:onClick="goToHomePage"
         android:id="@+id/tv_skip_choose_topic"
         style="@style/Linked_TextView"
         android:layout_alignParentRight="true"
@@ -26,20 +27,20 @@
         style="@style/Sub_View4"
         android:orientation="horizontal">
         <ToggleButton
-            style="@style/btn_choose_topic"
-            android:textOn="@string/eat_and_drink"
-            android:textOff="@string/eat_and_drink"
-            android:background="@drawable/toggle_button"/>
+            android:id="@+id/btn_eating"
+            style="@style/Sub_View1.btn_choose_topic"
+            android:textOn="@string/food"
+            android:textOff="@string/food" />
         <ToggleButton
-            style="@style/btn_choose_topic"
+            android:id="@+id/btn_shopping"
+            style="@style/Sub_View1.btn_choose_topic"
             android:textOn="@string/shopping"
-            android:textOff="@string/shopping"
-            android:background="@drawable/toggle_button"/>
+            android:textOff="@string/shopping" />
         <ToggleButton
-            style="@style/btn_choose_topic"
+            android:id="@+id/btn_vincom"
+            style="@style/Sub_View1.btn_choose_topic"
             android:textOn="@string/Vincom"
-            android:textOff="@string/Vincom"
-            android:background="@drawable/toggle_button"/>
+            android:textOff="@string/Vincom"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/linear_topic2"
@@ -47,15 +48,15 @@
         android:orientation="horizontal"
         android:layout_below="@+id/linear_topic1">
         <ToggleButton
-            style="@style/btn_choose_topic"
+            android:id="@+id/btn_vinhomes"
+            style="@style/Sub_View1.btn_choose_topic"
             android:textOn="@string/Vinhomes"
-            android:textOff="@string/Vinhomes"
-            android:background="@drawable/toggle_button"/>
+            android:textOff="@string/Vinhomes"/>
         <ToggleButton
-            style="@style/btn_choose_topic"
+            android:id="@+id/btn_point"
+            style="@style/Sub_View1.btn_choose_topic"
             android:textOn="@string/save_and_spend_point"
-            android:textOff="@string/save_and_spend_point"
-            android:background="@drawable/toggle_button"/>
+            android:textOff="@string/save_and_spend_point" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/linear_topic3"
@@ -63,32 +64,34 @@
         style="@style/Sub_View4"
         android:orientation="horizontal">
         <ToggleButton
-            style="@style/btn_choose_topic"
+            android:id="@+id/btn_home_helper"
+            style="@style/Sub_View1.btn_choose_topic"
             android:textOn="@string/home_helper"
-            android:textOff="@string/home_helper"
-            android:background="@drawable/toggle_button"/>
+            android:textOff="@string/home_helper" />
         <ToggleButton
-            style="@style/btn_choose_topic"
+            android:id="@+id/btn_buy_ticket"
+            style="@style/Sub_View1.btn_choose_topic"
             android:textOn="@string/buy_ticket"
-            android:textOff="@string/buy_ticket"
-            android:background="@drawable/toggle_button"/>
+            android:textOff="@string/buy_ticket" />
     </LinearLayout>
     <LinearLayout
         android:layout_below="@+id/linear_topic3"
         android:orientation="horizontal"
         style="@style/Sub_View4">
         <ToggleButton
-            style="@style/btn_choose_topic"
+            android:id="@+id/btn_payment"
+            style="@style/Sub_View1.btn_choose_topic"
             android:textOn="@string/payment_water_electric"
-            android:textOff="@string/payment_water_electric"
-            android:background="@drawable/toggle_button"/>
+            android:textOff="@string/payment_water_electric" />
         <ToggleButton
-            style="@style/btn_choose_topic"
+            android:id="@+id/btn_voucher"
+            style="@style/Sub_View1.btn_choose_topic"
             android:textOn="@string/voucher"
-            android:textOff="@string/voucher"
-            android:background="@drawable/toggle_button"/>
+            android:textOff="@string/voucher"/>
     </LinearLayout>
     <Button
+        android:onClick="goToHomePage"
+        android:id="@+id/btn_start_using"
         style="@style/btn_next"
         android:text="@string/begin_using"/>
 </RelativeLayout>

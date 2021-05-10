@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Sub_View2"
+    tools:context="HomeActivities.Inbox">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        style="@style/Sub_View4.Bottom_Navigation_Bar"
+        android:id="@+id/bottom_navigation_bar">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <TextView
+        android:id="@+id/tv_inbox_title"
+        style="@style/TextView_Title"
+        android:text="@string/inbox"/>
+    <RelativeLayout
+        android:id="@+id/tv_inbox_notice"
+        android:layout_below="@+id/tv_inbox_title"
+        style="@style/Sub_View4">
+        <ImageView
+            android:id="@+id/img_inbox_category"
+            style="@style/Icon_Inbox"
+            android:src="@drawable/icon_notices"/>
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_inbox_category"
+            style="@style/Sub_View1"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/img_inbox_category">
+            <TextView
+                style="@style/TextView_Inbox_Item"
+                android:text="@string/notice"/>
+            <TextView
+                style="@style/TextView_Content"
+                android:text="@string/notice_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/tv_inbox_promotion"
+        android:layout_below="@+id/tv_inbox_notice"
+        android:layout_marginTop="@dimen/dimen10"
+        style="@style/Sub_View4">
+        <ImageView
+            style="@style/Icon_Inbox"
+            android:src="@drawable/icon_promotion"/>
+        <LinearLayout
+            style="@style/Sub_View1"
+            android:orientation="vertical">
+            <TextView
+                style="@style/TextView_Inbox_Item"
+                android:text="@string/promotion"/>
+            <TextView
+                style="@style/TextView_Content"
+                android:text="@string/promotion_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/tv_inbox_promotion"
+        android:layout_marginTop="@dimen/dimen10"
+        style="@style/Sub_View4">
+        <ImageView
+            style="@style/Icon_Inbox"
+            android:src="@drawable/icon_news"/>
+        <LinearLayout
+            style="@style/Sub_View1"
+            android:orientation="vertical">
+            <TextView
+                style="@style/TextView_Inbox_Item"
+                android:text="@string/news"/>
+            <TextView
+                style="@style/TextView_Content"
+                android:text="@string/new_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/btn_create_new_message"
+        android:layout_above="@+id/bottom_navigation_bar"
+        android:text="@string/create_new_message" />
+
+</RelativeLayout>

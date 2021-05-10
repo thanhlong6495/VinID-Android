@@ -6,28 +6,46 @@
 
     <application
         android:allowBackup="true"
-        android:configChanges="locale"
+        android:configChanges="locale|orientation"
         android:icon="@drawable/app_avatar"
         android:label="@string/app_name"
         android:roundIcon="@drawable/app_avatar"
         android:supportsRtl="true"
         android:theme="@style/Theme.VinID">
-        <activity android:name="Activities.TopicService"></activity>
         <activity
-            android:name="Activities.PersonalInformation"
+            android:name="HomeActivities.Profile"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:exported="true" />
+        <activity android:name="HomeActivities.Inbox"
+            android:exported="true"/>
+        <activity android:name="HomeActivities.MyWallet"
+            android:exported="true"/>
+        <activity
+            android:name="HomeActivities.HomePage"
+            android:exported="true" />
+        <activity
+            android:name="RegisterActivities.TopicService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="RegisterActivities.PersonalInformation"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="Activities.PinCode"
+            android:name="RegisterActivities.PinCode"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity
-            android:name="Activities.ConfirmOTP"
+            android:name="RegisterActivities.ConfirmOTP"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity
-            android:name="Activities.PhoneNumberRegister"
+            android:name="RegisterActivities.PhoneNumberRegister"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity
-            android:name="Activities.MainActivity"
+            android:name="RegisterActivities.MainActivity"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

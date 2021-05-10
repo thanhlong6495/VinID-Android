@@ -5,8 +5,7 @@
     android:id="@+id/edtphone_number"
     style="@style/Activity_Style"
     android:orientation="vertical"
-    tools:context="Activities.MainActivity">
-
+    tools:context="RegisterActivities.MainActivity">
     <LinearLayout
         android:id="@+id/languagebtn"
         style="@style/Sub_View4"

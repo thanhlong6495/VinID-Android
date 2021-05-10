@@ -33,7 +33,7 @@
     <string name="date_picker_title">Select Date</string>
     <string name="skip">Skip</string>
     <string name="service_hint">Choose the service you are interested in, VinID will suggest you more exactly</string>
-    <string name="eat_and_drink">Eating</string>
+    <string name="food">Food</string>
     <string name="shopping">Shopping</string>
     <string name="Vincom">Vincom</string>
     <string name="Vinhomes">Vinhomes</string>
@@ -43,4 +43,65 @@
     <string name="payment_water_electric">Payment water and electric</string>
     <string name="voucher">Voucher</string>
     <string name="begin_using">Begin using</string>
+    <!--    Home Page-->
+    <string name="home_page">Home</string>
+    <string name="my_wallet">My wallet</string>
+    <string name="inbox">Inbox</string>
+    <string name="account">Account</string>
+    <string name="hint_search">Find every thing</string>
+    <string name="information_warning">Please enter all the information </string>
+<!--    <string name="link_bank_account">-->
+<!--        <br>-->
+<!--           Link with your bank,\n-->
+<!--        </br>-->
+<!--        <br>-->
+<!--            pay with convinience-->
+<!--        </br>-->
+<!--    </string>-->
+    <string name="link_now">Link now ></string>
+    <string name="grocery">Grocery</string>
+    <string name="Vinmart">Vinmart</string>
+    <string name="utilities">Utilities</string>
+    <string name="All_Of_Services">Explore all services</string>
+
+    <string name="notice">Notice</string>
+    <string name="notice_content">Update transaction information, refunds</string>
+    <string name="promotion">Promotion</string>
+    <string name="promotion_content">"Don't miss super attractive promotin from VinID"</string>
+    <string name="news">New</string>
+    <string name="new_content">Update the new features of VinID</string>
+    <string name="create_new_message"> + Create new message</string>
+    <!--    My Wallet-->
+    <string name="wallet_recommend">
+        <br>Fill up your empty wallet \n</br>
+        <br>with money. But first, \n</br>
+        <br>link bank account!</br>
+    </string>
+    <string name="group_fund">Group fund</string>
+    <string name="create_new_group_fund">Create new group fund</string>
+    <string name="travel">Travel</string>
+    <string name="subsistence">Subsistence</string>
+    <string name="Electronic_Wallet_Title">E-wallet helps you?</string>
+    <string name="Electronic_Wallet_Usefull">Pay for all transactions on VinID and at accepting locations such as Vinmart, Vinmart + …</string>
+    <string name="My_Wallet_Footer">Powered by VinID Pay JSC</string>
+    <!--Profile    -->
+    <string name="profile">Account</string>
+    <string name="point">Points</string>
+    <string name="my_pocket">My pocket</string>
+    <string name="address_book">Address book</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="contact_book">Contact Book</string>
+    <string name="redeemed_gift">Redeemed gift</string>
+    <string name="setting">Setting</string>
+    <string name="password_security">Password &amp; Security</string>
+    <string name="help_center">Help center</string>
+    <string name="share_with_friends">Share with friends</string>
+    <string name="share_now">Share now</string>
+    <string name="profile_footer_title">How good are we?</string>
+    <string name="profile_footer_content">
+        <br>It would be great if VinID \n</br>
+        <br>received feedback from you \n</br>
+        <br>to improve our quality.</br>
+    </string>
+    <string name="version_name">Version: 94.6 (9500025)</string>
 </resources>

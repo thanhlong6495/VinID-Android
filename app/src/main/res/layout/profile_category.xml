@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Sub_View2">
+    <RelativeLayout
+        style="@style/Sub_View4.Profile_Item">
+        <ImageView
+            android:id="@+id/img_category"
+            style="@style/Category_Image"/>
+        <TextView
+            android:id="@+id/tv_category_name"
+            style="@style/Sub_View1.Profile_Category_Name"/>
+        <ImageView
+            style="@style/Profile_Symbol"/>
+    </RelativeLayout>
+</LinearLayout>

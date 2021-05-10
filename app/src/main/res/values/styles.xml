@@ -26,6 +26,16 @@
         <item name="android:textColor">@color/button_of_text_unable</item>
         <item name="textAllCaps">false</item>
     </style>
+    <style name="btn_create_new_message">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/new_message_button</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimen10</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+    </style>
     <style name="Activity_Style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -60,6 +70,19 @@
         <item name="android:textSize">@dimen/text_size16</item>
         <item name="android:layout_marginTop">@dimen/dimen10</item>
     </style>
+    <style name="TextView_Content">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size14</item>
+    </style>
+    <style name="Service_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
     <style name="TextView_Hint">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/black</item>
@@ -78,6 +101,47 @@
         <item name="android:gravity">center</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="My_Wallet_Subtitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginLeft">@dimen/dimen10</item>
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="My_Wallet_Title">
+        <item name="android:textSize">@dimen/text_size25</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">@dimen/dimen10</item>
+    </style>
+    <style name="TextView_Guide">
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">@dimen/dimen10</item>
+        <item name="android:layout_marginBottom">@dimen/dimen30</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TextView_Inbox_Item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TextView_Associate_Bank_Account">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:textColor">@color/banner_text</item>
+        <item name="android:layout_margin">@dimen/dimen10</item>
     </style>
     <style name="Phone_Number_EditText">
         <item name="android:inputType">number</item>
@@ -117,21 +181,223 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/dimen10</item>
     </style>
-    <style name="btn_choose_topic">
+    <style name="Sub_View1.btn_choose_topic">
+        <item name="android:background"><![CDATA[@drawable/toggle_button]]></item>
         <item name="android:layout_marginTop">@dimen/dimen10</item>
         <item name="android:layout_marginRight">@dimen/dimen10</item>
         <item name="android:textSize">@dimen/text_size16</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="textAllCaps">false</item>
     </style>
-    <style name="CountDownTimer">
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_width">wrap_content</item>
+    <style name="Sub_View3.CountDownTimer">
         <item name="android:textSize">@dimen/text_size22</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:gravity">center</item>
+    </style>
+<!--Home Page Activity    -->
+    <style name="Sub_View2.Search_Bar">
+        <item name="android:padding">@dimen/dimen10</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:textColor">@color/hint_text</item>
+        <item name="android:layout_marginRight">@dimen/dimen10</item>
+        <item name="android:layout_marginLeft">@dimen/dimen10</item>
+    </style>
+    <style name="Sub_View4.Header_Style">
+        <item name="android:paddingTop">@dimen/dimen40</item>
+        <item name="android:paddingBottom">@dimen/dimen10</item>
+    </style>
+    <style name="Banner_Style">
+        <item name="android:layout_marginLeft">@dimen/dimen10</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen150</item>
+        <item name="android:layout_marginRight">@dimen/dimen10</item>
+    </style>
+    <style name="Banner_My_Wallet_Style">
+        <item name="android:background">@drawable/banner_style</item>
+        <item name="android:layout_marginLeft">@dimen/dimen15</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen150</item>
+        <item name="android:layout_marginRight">@dimen/dimen15</item>
+    </style>
+    <style name="Image_Banner">
+        <item name="android:layout_height">@dimen/dimen120</item>
+        <item name="android:layout_width">@dimen/dimen120</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">@dimen/dimen10</item>
+    </style>
+    <style name="Icon_services">
+        <item name="android:layout_height">@dimen/dimen50</item>
+        <item name="android:layout_width">@dimen/dimen50</item>
+    </style>
+    <style name="Icon_Inbox">
+        <item name="android:layout_height">@dimen/dimen50</item>
+        <item name="android:layout_width">@dimen/dimen50</item>
+        <item name="android:layout_marginRight">@dimen/dimen10</item>
+    </style>
+    <style name="GridView_HomePage_Style">
+        <item name="android:verticalSpacing">@dimen/dimen10</item>
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:layout_height">@dimen/GridView_HomePage</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:numColumns">@integer/Home_Page_GridView_NumColumns</item>
+    </style>
+    <style name="Sub_View1.GridLayout_My_Wallet_Style">
+        <item name="android:columnCount">@integer/My_Wallet_GridLayout_ColumnCount</item>
+        <item name="android:rowCount">@integer/My_Wallet_GridLayout_RowCount</item>
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:layout_marginRight">@dimen/dimen15</item>
+        <item name="android:layout_marginLeft">@dimen/dimen15</item>
+    </style>
+    <style name="Sub_View4.GridLayout_My_Wallet_Item">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="Sub_View1.GridLayout_My_Wallet_Item_TextView">
+        <item name="android:layout_marginLeft">@dimen/dimen10</item>
+        <item name="android:layout_marginStart">@dimen/dimen10</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+    </style>
+    <style name="Icon_Bottom_Navigation_Bar">
+        <item name="android:layout_height">@dimen/dimen25</item>
+        <item name="android:layout_width">@dimen/dimen25</item>
+    </style>
+    <style name="Normal_TextView.All_Of_Services">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/linked_text_color</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">@string/All_Of_Services</item>
+    </style>
+    <style name="Sub_View4.Bottom_Navigation_Bar">
+        <item name="menu">@menu/bottom_navigation</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:itemBackground">@color/white</item>
+        <item name="background">@color/white</item>
+    </style>
+    <style name="Sub_View1.CardView_My_Wallet_Services">
+        <item name="android:layout_marginBottom">@dimen/dimen10</item>
+        <item name="cardCornerRadius">@dimen/dimen15</item>
+        <item name="android:layout_marginRight">@dimen/dimen30</item>
+    </style>
+    <style name="Sub_View2.CardView_My_Wallet_Footer">
+        <item name="android:layout_marginLeft">@dimen/dimen15</item>
+        <item name="android:layout_marginRight">@dimen/dimen15</item>
+        <item name="cardCornerRadius">@dimen/dimen15</item>
+        <item name="android:layout_marginBottom">@dimen/dimen15</item>
+    </style>
+    <style name="Sub_View4.CardView_Profile">
+        <item name="cardCornerRadius">@dimen/dimen15</item>
+    </style>
+    <style name="Sub_View2.Electronic_Wallet_Title">
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">@dimen/dimen10</item>
+    </style>
+    <style name="Sub_View2.Electronic_Wallet_Content">
+        <item name="android:text"><![CDATA[@string/Electronic_Wallet_Usefull]]></item>
+        <item name="android:layout_marginBottom">@dimen/dimen10</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:layout_marginLeft">@dimen/dimen10</item>
+        <item name="android:lines">2</item>
+    </style>
+    <style name="Sub_View1.TextView_Copyright">
+        <item name="android:layout_marginBottom">@dimen/dimen10</item>
+        <item name="android:text"><![CDATA[@string/My_Wallet_Footer]]></item>
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:textColor">@color/copyright_text_color</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="Sub_View2.ScrollView_Style">
+        <item name="android:paddingBottom">@dimen/bottom_navigation_bar_height</item>
+    </style>
+    <style name="Sub_View4.Profile_Item">
+        <item name="android:layout_marginTop">@dimen/dimen20</item>
+    </style>
+    <style name="Category_Image">
+        <item name="android:layout_height">@dimen/dimen30</item>
+        <item name="android:layout_width">@dimen/dimen30</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/dimen20</item>
+    </style>
+    <style name="Profile_Symbol">
+        <item name="android:layout_height">@dimen/dimen25</item>
+        <item name="android:layout_width">@dimen/dimen25</item>
+        <item name="android:src">@drawable/symbol</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="Sub_View1.Profile_Category_Name">
+        <item name="android:textColor">@color/banner_text</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_toRightOf"><![CDATA[@+id/img_category]]></item>
+        <item name="android:layout_toEndOf"><![CDATA[@+id/img_category]]></item>
+    </style>
+    <style name="TextView_Icon_Name">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+    </style>
+    <style name="Sub_View1.Rating_Bar">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+    <style name="Sub_View2.Profile_Activity_Style">
+        <item name="android:layout_marginLeft">@dimen/dimen15</item>
+        <item name="android:layout_marginRight">@dimen/dimen15</item>
+    </style>
+    <style name="Profile_Avatar">
+        <item name="android:src"><![CDATA[@drawable/profile_avatar_default]]></item>
+        <item name="android:layout_height">@dimen/dimen50</item>
+        <item name="android:layout_width">@dimen/dimen50</item>
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+    </style>
+    <style name="TextView_Profile_Information">
+        <item name="lineHeight">@dimen/dimen20</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/dimen20</item>
+    </style>
+    <style name="GridView_Profile">
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/GridView_Profile</item>
+    </style>
+    <style name="Sub_View4.Profile_Footer">
+        <item name="android:src"><![CDATA[@drawable/banner_rating]]></item>
+        <item name="android:background"><![CDATA[@drawable/banner_rating]]></item>
+    </style>
+    <style name="Sub_View1.TextView_Profile_Footer">
+        <item name="android:layout_marginStart">@dimen/dimen10</item>
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:layout_marginLeft">@dimen/dimen10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text"><![CDATA[@string/profile_footer_content]]></item>
+    </style>
+    <style name="Sub_View1.Version_Name">
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:layout_marginBottom">@dimen/dimen10</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:text"><![CDATA[@string/version_name]]></item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:background">@drawable/profile_bottom_sheet_dialog</item>
     </style>
 </resources>

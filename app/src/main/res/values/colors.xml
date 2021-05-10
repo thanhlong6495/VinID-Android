@@ -6,17 +6,24 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <!--text-->
+<!--text-->
+    <color name="banner_text">#CB191818</color>
+    <color name="hint_text">#A1BDCC</color>
     <color name="policy_text_color">#709498</color>
     <color name="linked_text_color">#1C33B3</color>
     <color name="language_text_color">#0715D5</color>
+    <color name="copyright_text_color">#D8D6D6</color>
 
-    <!--button-->
-    <color name="button_language">#1A37CC</color>
+<!--button-->
     <color name="button_enable">#809CA3</color>
     <color name="button_unable">#A1BDCC</color>
-    <color name="button_of_text_enable">#0715D5</color>
+    <color name="button_background">#3F4BF1</color>
     <color name="button_of_text_unable">#5E75B1</color>
-    <color name="toggle_button_unable">#A1BDCC</color>
+    <color name="toggle_button_unable">#A19C9C</color>
     <color name="toggle_button_enable">#785EEC</color>
+<!--header background    -->
+    <color name="header_background">#E0C8E6</color>
+<!--bottom navigation bar text color    -->
+    <color name="bottom_navigation_text_unselected">#A19C9C</color>
+    <color name="bottom_navigation_text_selected">#D61406</color>
 </resources>

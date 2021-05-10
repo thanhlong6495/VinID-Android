@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Sub_View2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dimen10">
+    <ImageView
+        android:id="@+id/img_services"
+        style="@style/Icon_services"/>
+    <TextView
+        android:id="@+id/tv_services_name"
+        style="@style/TextView_Icon_Name"/>
+</LinearLayout>

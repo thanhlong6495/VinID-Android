@@ -34,7 +34,7 @@
     <string name="date_picker_title">日選択</string>
     <string name="skip">後で</string>
     <string name="service_hint">興味のあるサービスを選択してください。VinIDがより正確に提案します</string>
-    <string name="eat_and_drink">飲食</string>
+    <string name="food">飲食</string>
     <string name="shopping">ショッピング</string>
     <string name="Vincom">ヴィンコム</string>
     <string name="Vinhomes">ヴィンホムズ</string>
@@ -44,4 +44,61 @@
     <string name="payment_water_electric">清算電気代、水代</string>
     <string name="voucher">バウチャー</string>
     <string name="begin_using">使用を始めます</string>
+    <string name="home_page">ホム</string>
+    <string name="my_wallet">財布</string>
+    <string name="inbox">ポスト</string>
+    <string name="account">アカウント</string>
+    <string name="hint_search">検索</string>
+    <string name="information_warning">全く情報を入力して下さい</string>
+<!--    <string name="link_bank_account">-->
+<!--        <br>-->
+<!--            銀行口座リンク、\n-->
+<!--        </br>-->
+<!--        <br>-->
+<!--           簡単な支払い-->
+<!--        </br>-->
+<!--    </string>-->
+    <string name="link_now">すぐリンク ></string>
+    <string name="grocery">市場</string>
+    <string name="Vinmart">ヴィンマート</string>
+    <string name="utilities">ユーティリティ</string>
+    <string name="All_Of_Services">サービス全て見ます</string>
+    <string name="notice">お知らせ</string>
+    <string name="notice_content">取引情報アップデート、返金</string>
+    <string name="promotion">割引</string>
+    <string name="promotion_content">VinIDからの超魅力的​​な割引をお見逃しなく</string>
+    <string name="news">ニュース</string>
+    <string name="new_content">VinIDの新機能を更新します</string>
+    <string name="create_new_message"> + 新しいメッセージ作成</string>
+    <string name="wallet_recommend">
+        <br>財布には資金がなく、\n</br>
+        <br>銀行口座接続、\n</br>
+        <br>すぐに預金します</br></string>
+    <string name="group_fund">グループ基金</string>
+    <string name="create_new_group_fund">新しいグループ基金作成</string>
+    <string name="travel">旅行</string>
+    <string name="subsistence">生活費</string>
+    <string name="Electronic_Wallet_Title">E-walletはあなたを助けますか？</string>
+    <string name="Electronic_Wallet_Usefull">VinIDで、Vinmart、Vinmart + ..
+        .などすべての取引の支払いができます</string>
+    <string name="My_Wallet_Footer">Powered by VinID Pay JSC</string>
+    <!--Profile    -->
+    <string name="profile">アカウント</string>
+    <string name="point">ポイント</string>
+    <string name="my_pocket">カート</string>
+    <string name="address_book">住所</string>
+    <string name="transaction_history">取引履歴</string>
+    <string name="contact_book">電話帳</string>
+    <string name="redeemed_gift">プレゼント</string>
+    <string name="setting">設定</string>
+    <string name="password_security">暗証番号　&amp; セキュリティ</string>
+    <string name="help_center">ヘルプセンター</string>
+    <string name="share_with_friends">友達招待</string>
+    <string name="share_now">すぐシェア</string>
+    <string name="profile_footer_title">あなたの評価</string>
+    <string name="profile_footer_content">
+        <br>品質を向上させるためにVinID \n </br>
+        <br>があなたからフィードバックを \n </br>
+        <br>受け取ったら素晴らしいと思います</br></string>
+    <string name="version_name">バージョン: 94.6 (950025)</string>
 </resources>

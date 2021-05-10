@@ -37,7 +37,7 @@
         <TextView
             android:id="@+id/tv_countdown_timer"
             android:layout_weight="1"
-            style="@style/CountDownTimer"/>
+            style="@style/Sub_View3.CountDownTimer"/>
     </LinearLayout>
     <RelativeLayout
         android:layout_below="@+id/linear_otp_title"
@@ -51,7 +51,8 @@
             style="@style/Linked_TextView"
             android:layout_alignParentRight="true"
             android:text="@string/otp_send_again"
-            android:gravity="end"/>
+            android:gravity="end"
+            android:layout_alignParentEnd="true" />
         <Button
             android:onClick="goToPinCode"
             android:id="@+id/btn_otp_confirm"

@@ -10,7 +10,7 @@
     <string name="language_en">Tiếng Anh</string>
     <string name="language_ja">Tiếng Nhật</string>
     <string name="invitation_code">Bạn có mã giới thiệu?</string>
-    <string name="app_policy">Bằng việc chọn Tiếp tục, bạn đã đồng ý với ĐIều khoản &amp; Điều kiện cùng Chính sách bảo mật và chia sẻ thông tin của VinID</string>
+    <string name="app_policy">Bằng việc chọn Tiếp tục, bạn đã đồng ý với Điều khoản &amp; Điều kiện cùng Chính sách bảo mật và chia sẻ thông tin của VinID</string>
     <string name="btn_continue">Tiếp tục</string>
     <string name="invitation_code_title">Nhập mã giới thiệu</string>
     <string name="phone_number_warning">Xin vui lòng nhập số điện thoại chính xác</string>
@@ -34,7 +34,7 @@
     <string name="date_picker_title">Chọn ngày</string>
     <string name="skip">Để sau</string>
     <string name="service_hint">Chọn dịch vụ bạn quan tâm, VinID sẽ gợi ý cho bạn chính xác hơn</string>
-    <string name="eat_and_drink">Ăn uống</string>
+    <string name="food">Ăn uống</string>
     <string name="shopping">Mua sắm</string>
     <string name="Vincom">Vincom</string>
     <string name="Vinhomes">Vinhomes</string>
@@ -44,4 +44,60 @@
     <string name="payment_water_electric">Thanh toán điện nước</string>
     <string name="voucher">Voucher</string>
     <string name="begin_using">Bắt đầu sử dụng</string>
+    <string name="home_page">Trang chủ</string>
+    <string name="my_wallet">Ví của tôi</string>
+    <string name="inbox">Hộp thư</string>
+    <string name="account">Tài khoản</string>
+    <string name="hint_search">Tìm kiếm mọi thứ</string>
+    <string name="information_warning">Vui lòng nhập đầy đủ các thông tin</string>
+<!--    <string name="link_bank_account">-->
+<!--        <br>-->
+<!--            Liên kết ngân hàng,\n-->
+<!--        </br>-->
+<!--        <br>-->
+<!--            thanh toán dễ dàng-->
+<!--        </br>-->
+<!--    </string>-->
+    <string name="link_now">Liên kết ngay ></string>
+    <string name="grocery">Đi chợ</string>
+    <string name="Vinmart">Vinmart</string>
+    <string name="utilities">Tiện ích</string>
+    <string name="All_Of_Services">Xem tất cả dịch vụ</string>
+    <string name="notice">Thông báo</string>
+    <string name="notice_content">Cập nhật thông tin giao dịch, hoàn tiền</string>
+    <string name="promotion">Khuyến mại</string>
+    <string name="promotion_content">Đừng bỏ lỡ ưu đãi siêu hấp dẫn từ VinID</string>
+    <string name="news">Tin tức</string>
+    <string name="new_content">Cập nhật các tính năng mới nhất của VinID</string>
+    <string name="create_new_message"> + Tạo tin nhắn mới</string>
+    <string name="wallet_recommend">
+        <br>Ví của bạn chưa có tiền,\n</br>
+        <br>liên kết ngân hàng\n</br>
+        <br>và nạp ngay</br></string>
+    <string name="group_fund">Quỹ nhóm</string>
+    <string name="create_new_group_fund">Tạo quỹ nhóm mới</string>
+    <string name="travel">Du lịch</string>
+    <string name="subsistence">Sinh hoạt phí</string>
+    <string name="Electronic_Wallet_Title">Ví điện tử giúp gì cho bạn?</string>
+    <string name="Electronic_Wallet_Usefull">Thanh toán mọi giao dịch trên VinID và tại các địa điểm chấp nhận ví như: Vinmart, Vinmart+ …</string>
+    <string name="My_Wallet_Footer">Powered by VinID Pay JSC</string>
+    <!--Profile    -->
+    <string name="profile">Tài khoản</string>
+    <string name="point">Điểm tích luỹ</string>
+    <string name="my_pocket">Túi đồ</string>
+    <string name="address_book">Sổ địa chỉ</string>
+    <string name="transaction_history">Lịch sử giao dịch</string>
+    <string name="contact_book">Danh bạ</string>
+    <string name="redeemed_gift">Quà tặng</string>
+    <string name="setting">Cài đặt</string>
+    <string name="password_security">Mật khẩu &amp; Bảo mật</string>
+    <string name="help_center">Trung tâm trợ giúp</string>
+    <string name="share_with_friends">Giới thiệu bạn bè</string>
+    <string name="share_now">Chia sẻ ngay</string>
+    <string name="profile_footer_title">Đánh giá của bạn</string>
+    <string name="profile_footer_content">
+        <br>Sẽ thật tuyệt vời nếu VinID \n </br>
+        <br>nhận được đánh giá của bạn \n </br>
+        <br>nhằm nâng cao chất lượng dịch vụ </br></string>
+    <string name="version_name"></string>
 </resources>

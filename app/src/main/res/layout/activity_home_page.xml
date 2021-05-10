@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Sub_View2"
+    tools:context="HomeActivities.HomePage">
+    <ScrollView
+        android:paddingBottom="@dimen/bottom_navigation_bar_height"
+        style="@style/Sub_View4">
+        <LinearLayout
+            android:orientation="vertical"
+            style="@style/Sub_View4">
+            <!--Header-->
+            <LinearLayout
+                android:id="@+id/header_layout"
+                style="@style/Sub_View4.Header_Style"
+                android:background="@color/header_background"
+                android:weightSum="10">
+                <EditText
+                    android:layout_weight="9"
+                    style="@style/Sub_View2.Search_Bar"
+                    android:background="@drawable/search_bar"
+                    android:text="@string/hint_search" />
+                <ImageView
+                    style="@style/Sub_View1"
+                    android:layout_marginRight="@dimen/dimen10"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_present" />
+            </LinearLayout>
+            <!--Banner Wallet-->
+            <HorizontalScrollView
+                style="@style/Sub_View1">
+                <LinearLayout
+                    style="@style/Sub_View4">
+                    <ImageView
+                        style="@style/Banner_Style"
+                        android:src="@drawable/banner_wallet"/>
+                    <ImageView
+                        style="@style/Banner_Style"
+                        android:src="@drawable/my_wallet"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <!--            Services-->
+            <GridView
+                android:id="@+id/gridview_services"
+                style="@style/GridView_HomePage_Style">
+            </GridView>
+            <TextView
+                style="@style/Normal_TextView.All_Of_Services"
+                android:text="@string/All_Of_Services" />
+            <ImageView
+                style="@style/Banner_Style"
+                android:src="@drawable/banner_discount"/>
+        </LinearLayout>
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        style="@style/Sub_View4.Bottom_Navigation_Bar"
+        android:id="@+id/bottom_navigation_bar">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
