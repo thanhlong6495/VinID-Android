@@ -26,4 +26,6 @@
 <!--bottom navigation bar text color    -->
     <color name="bottom_navigation_text_unselected">#A19C9C</color>
     <color name="bottom_navigation_text_selected">#D61406</color>
+<!--Rating Bar    -->
+    <color name="activated_star_color">#EFC908</color>
 </resources>

@@ -1,114 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
-    android:backgroundTint="@color/white"
+    android:layout_height="380dp"
     xmlns:tools="http://schemas.android.com/tools"
-
     tools:context="HomeActivities.Profile">
     <LinearLayout
-        android:layout_margin="@dimen/dimen10"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        style="@style/Sub_View4.Profile_Bottom_Sheet_Parent_Layout">
         <RelativeLayout
-            android:id="@+id/relativeLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:id="@+id/bottom_sheet_rating_bar"
+            style="@style/Sub_View4.Profile_Bottom_Sheet_Title">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/img_button_close" />
+                style="@style/Sub_View1.Profile_Bottom_Sheet_Close_Button"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="How good are we?"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                style="@style/Sub_View1.Profile_Bottom_Sheet_Title_TextView" />
         </RelativeLayout>
-
         <RelativeLayout
             android:layout_marginTop="@dimen/dimen20"
-            android:layout_below="@+id/relativeLayout"
-            android:id="@+id/relativeLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/Sub_View4">
             <RatingBar
-                android:id="@+id/rating_bar_fragment"
+                android:id="@+id/rating_bar_dialog"
                 android:layout_centerHorizontal="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:numStars="5"
-                android:stepSize="1"/>
-
+                style="@style/Sub_View1.Rating_Bar"/>
             <TextView
                 android:id="@+id/tv_your_feedback"
-                android:layout_marginTop="20dp"
-                android:layout_below="@+id/tv_emotion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Your feedback"
-                android:textStyle="bold"/>
+                style="@style/Sub_View1.Feedback_Title" />
             <androidx.cardview.widget.CardView
-                app:cardCornerRadius="@dimen/dimen15"
-                android:layout_marginTop="@dimen/dimen20"
-                android:layout_below="@id/tv_your_feedback"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/Sub_View4.CardView_Feedback_Edittext">
                 <EditText
-                    android:background="@android:color/transparent"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/dimen100"
-                    android:hint="Kindly leave your suggestion here"/>
+                    style="@style/Feedback_EditText"/>
             </androidx.cardview.widget.CardView>
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:text="Send"
-                android:backgroundTint="@color/button_background"/>
-
+                style="@style/Sub_View4.Button_Send"
+                tools:targetApi="lollipop" />
             <LinearLayout
                 android:id="@+id/tv_emotion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rating_bar_fragment"
+                style="@style/Sub_View1"
+                android:layout_below="@+id/rating_bar_dialog"
                 android:layout_centerHorizontal="true"
                 android:weightSum="5">
-
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Terrible" />
-
+                    android:id="@+id/one_star"
+                    style="@style/Sub_View1"
+                    android:layout_weight="1"/>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Terrible" />
-
+                    android:id="@+id/two_star"
+                    style="@style/Sub_View1"
+                    android:layout_weight="1"/>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Terrible" />
-
+                    android:id="@+id/three_star"
+                    style="@style/Sub_View1"
+                    android:layout_weight="1"/>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Terrible" />
-
+                    android:id="@+id/four_star"
+                    style="@style/Sub_View1"
+                    android:layout_weight="1"/>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Terrible" />
+                    android:id="@+id/five_star"
+                    style="@style/Sub_View1"
+                    android:layout_weight="1"/>
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>

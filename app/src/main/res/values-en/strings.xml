@@ -104,4 +104,13 @@
         <br>to improve our quality.</br>
     </string>
     <string name="version_name">Version: 94.6 (9500025)</string>
+    <string name="how_good_are_we">Đánh giá chất lượng dịch vụ</string>
+    <string name="your_feedback">Your feedback</string>
+    <string name="feedback_hint">Kindly leave your suggestion here</string>
+    <string name="send">Send</string>
+    <string name="one_star">Terrible</string>
+    <string name="two_star">Normal</string>
+    <string name="three_star">Good</string>
+    <string name="four_star">Very good</string>
+    <string name="five_star">Amazing</string>
 </resources>

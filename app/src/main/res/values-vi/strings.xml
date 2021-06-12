@@ -99,5 +99,14 @@
         <br>Sẽ thật tuyệt vời nếu VinID \n </br>
         <br>nhận được đánh giá của bạn \n </br>
         <br>nhằm nâng cao chất lượng dịch vụ </br></string>
-    <string name="version_name"></string>
+    <string name="version_name">Version: 94.6 (9500025)</string>
+    <string name="how_good_are_we">Đánh giá chất lượng dịch vụ</string>
+    <string name="your_feedback">Phản hồi của bạn</string>
+    <string name="feedback_hint">Vui lòng để lại gợi ý của bạn ở đây</string>
+    <string name="send">Gửi</string>
+    <string name="one_star">Khá tệ</string>
+    <string name="two_star">Bình thường</string>
+    <string name="three_star">Tốt</string>
+    <string name="four_star">Rất tốt</string>
+    <string name="five_star">Tuyệt vời</string>
 </resources>

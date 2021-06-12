@@ -12,13 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.NavHost;
-import androidx.navigation.NavHostController;
-import androidx.navigation.fragment.NavHostFragment;
-
 import com.longtrang.vinid.R;
 
 public class PhoneNumberRegister extends AppCompatActivity {

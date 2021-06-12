@@ -101,4 +101,13 @@
         <br>があなたからフィードバックを \n </br>
         <br>受け取ったら素晴らしいと思います</br></string>
     <string name="version_name">バージョン: 94.6 (950025)</string>
+    <string name="how_good_are_we">サビス質評価</string>
+    <string name="your_feedback">あなたの評価</string>
+    <string name="feedback_hint">こちらに評価を書いて下さい</string>
+    <string name="send">送り</string>
+    <string name="one_star">悪い</string>
+    <string name="two_star">普通</string>
+    <string name="three_star">良い</string>
+    <string name="four_star">とても良い</string>
+    <string name="five_star">素晴らしい</string>
 </resources>

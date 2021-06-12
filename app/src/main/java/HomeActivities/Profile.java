@@ -2,10 +2,7 @@ package HomeActivities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -17,7 +14,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.longtrang.vinid.R;
 import java.util.ArrayList;
-
 import GridViewProfile.Category;
 import GridViewProfile.CategoryAdapter;
 
@@ -29,6 +25,7 @@ public class Profile extends AppCompatActivity {
     private final String defaultPhoneNumber = "phonenumber";
     private final String defaultFullName = "fullname";
     private RatingBar ratingBar;
+    private RatingBar ratingBarDiaglog;
     private BottomSheetDialog bottomSheetDialog;
 
     @Override
@@ -108,6 +105,7 @@ public class Profile extends AppCompatActivity {
     private void setBottomSheetDialog() {
         bottomSheetDialog = new BottomSheetDialog(this, R.style.AppBottomSheetDialogTheme);
         bottomSheetDialog.setContentView(R.layout.profile_bottom_sheet_dialog);
+        ratingBarDiaglog = bottomSheetDialog.findViewById(R.id.rating_bar_dialog);
         bottomSheetDialog.show();
     }
     private void setRatingBar() {
@@ -118,10 +116,11 @@ public class Profile extends AppCompatActivity {
                     case 1:
                         try {
                             Thread.sleep(500);
+                            setBottomSheetDialog();
+                            ratingBarDiaglog.setRating(ratingBar.getRating());
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-                        setBottomSheetDialog();
                     case 2:
                         try {
                             Thread.sleep(500);
@@ -129,6 +128,7 @@ public class Profile extends AppCompatActivity {
                             e.printStackTrace();
                         }
                         setBottomSheetDialog();
+                        ratingBarDiaglog.setNumStars(2);
                     case 3:
                         try {
                             Thread.sleep(500);
@@ -136,6 +136,7 @@ public class Profile extends AppCompatActivity {
                             e.printStackTrace();
                         }
                         setBottomSheetDialog();
+                        ratingBarDiaglog.setNumStars(3);
                     case 4:
                         try {
                             Thread.sleep(500);
@@ -143,6 +144,7 @@ public class Profile extends AppCompatActivity {
                             e.printStackTrace();
                         }
                         setBottomSheetDialog();
+                        ratingBarDiaglog.setNumStars(4);
                     case 5:
                         try {
                             Thread.sleep(500);
@@ -150,6 +152,7 @@ public class Profile extends AppCompatActivity {
                             e.printStackTrace();
                         }
                         setBottomSheetDialog();
+                        ratingBarDiaglog.setNumStars(5);
                 }
             }
         });

@@ -339,7 +339,10 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:textSize">@dimen/text_size16</item>
     </style>
-    <style name="Sub_View1.Rating_Bar">
+    <style name="Sub_View1.Rating_Bar" parent="Theme.AppCompat">
+        <item name="android:progressTint">@color/activated_star_color</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:numStars">5</item>
         <item name="android:stepSize">1</item>
@@ -385,19 +388,60 @@
         <item name="android:text"><![CDATA[@string/version_name]]></item>
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
         <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
     </style>
     <style name="AppBottomSheetDialogTheme"
         parent="Theme.Design.Light.BottomSheetDialog">
         <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="bottomSheetStyle">@style/AppModalStyle</item>
     </style>
-
     <style name="AppModalStyle"
         parent="Widget.Design.BottomSheet.Modal">
-        <item name="android:windowIsFloating">false</item>
-        <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="android:background">@drawable/profile_bottom_sheet_dialog</item>
+    </style>
+    <style name="Sub_View4.Profile_Bottom_Sheet_Parent_Layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/dimen10</item>
+    </style>
+    <style name="Sub_View4.Profile_Bottom_Sheet_Title">
+        <item name="layout_constraintStart_toEndOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+    <style name="Sub_View1.Profile_Bottom_Sheet_Close_Button">
+        <item name="android:src">@drawable/img_button_close</item>
+    </style>
+    <style name="Sub_View1.Profile_Bottom_Sheet_Title_TextView">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:text">@string/how_good_are_we</item>
+        <item name="android:textSize">@dimen/text_size20</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Sub_View1.Feedback_Title">
+        <item name="android:text">@string/your_feedback</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="layout_goneMarginTop">@dimen/dimen20</item>
+        <item name="android:layout_below">@+id/tv_emotion</item>
+    </style>
+    <style name="Sub_View4.CardView_Feedback_Edittext">
+        <item name="cornerRadius">@dimen/dimen15</item>
+        <item name="android:layout_marginTop">@dimen/dimen20</item>
+        <item name="android:layout_below">@id/tv_your_feedback</item>
+    </style>
+    <style name="Feedback_EditText">
+        <item name="android:hint">@string/feedback_hint</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen100</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="Sub_View4.Button_Send">
+        <item name="android:text">@string/send</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:backgroundTint">@color/button_background</item>
     </style>
 </resources>
