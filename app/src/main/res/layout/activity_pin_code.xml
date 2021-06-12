@@ -2,7 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Activity_Style"
+<<<<<<< HEAD
     tools:context="RegisterActivities.PinCode">
+=======
+    tools:context="Activities.PinCode">
+>>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
     <LinearLayout
         android:id="@+id/linear_PIN_title"
         style="@style/Sub_View4">

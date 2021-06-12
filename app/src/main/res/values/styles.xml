@@ -22,6 +22,7 @@
         <item name="android:textSize">@dimen/text_size22</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_centerHorizontal">true</item>
+<<<<<<< HEAD
         <item name="backgroundTint">@color/button_unable</item>
         <item name="android:textColor">@color/button_of_text_unable</item>
         <item name="textAllCaps">false</item>
@@ -36,6 +37,12 @@
         <item name="android:layout_marginBottom">@dimen/dimen10</item>
         <item name="android:textSize">@dimen/text_size16</item>
     </style>
+=======
+        <item name="backgroundTint">@color/button_next_background</item>
+        <item name="android:textColor">@color/button_next</item>
+        <item name="textAllCaps">false</item>
+    </style>
+>>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
     <style name="Activity_Style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -102,6 +109,7 @@
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
+<<<<<<< HEAD
     <style name="My_Wallet_Subtitle">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
@@ -143,6 +151,8 @@
         <item name="android:textColor">@color/banner_text</item>
         <item name="android:layout_margin">@dimen/dimen10</item>
     </style>
+=======
+>>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
     <style name="Phone_Number_EditText">
         <item name="android:inputType">number</item>
         <item name="android:layout_marginTop">@dimen/dimen10</item>
@@ -180,6 +190,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/dimen10</item>
+<<<<<<< HEAD
     </style>
     <style name="Sub_View1.btn_choose_topic">
         <item name="android:background"><![CDATA[@drawable/toggle_button]]></item>
@@ -443,5 +454,7 @@
         <item name="android:text">@string/send</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:backgroundTint">@color/button_background</item>
+=======
+>>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
     </style>
 </resources>

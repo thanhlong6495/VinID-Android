@@ -3,7 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/Activity_Style"
+<<<<<<< HEAD
     tools:context="RegisterActivities.PhoneNumberRegister">
+=======
+    tools:context="Activities.PhoneNumberRegister">
+>>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
     <TextView
         android:id="@+id/tv_enter_phonenumber_register"
         style="@style/TextView_Title"

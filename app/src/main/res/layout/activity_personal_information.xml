@@ -3,7 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Activity_Style"
+<<<<<<< HEAD
     tools:context="RegisterActivities.PersonalInformation">
+=======
+    tools:context="Activities.PersonalInformation">
+>>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
 
     <LinearLayout
         style="@style/Sub_View2"

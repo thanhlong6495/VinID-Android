@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VinID">
         <activity
+<<<<<<< HEAD
             android:name="HomeActivities.Profile"
             android:exported="true" />
         <activity android:name="HomeActivities.Inbox"
@@ -45,6 +46,21 @@
         <activity
             android:name="RegisterActivities.MainActivity"
             android:screenOrientation="portrait"
+=======
+            android:name="Activities.PersonalInformation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="Activities.PinCode"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name="Activities.ConfirmOTP"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name="Activities.PhoneNumberRegister"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name="Activities.MainActivity"
+>>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -31,6 +31,7 @@
     <string name="email_address">Email</string>
     <string name="done_button">Done</string>
     <string name="date_picker_title">Select Date</string>
+<<<<<<< HEAD
     <string name="skip">Skip</string>
     <string name="service_hint">Choose the service you are interested in, VinID will suggest you more exactly</string>
     <string name="food">Food</string>
@@ -113,4 +114,6 @@
     <string name="three_star">Good</string>
     <string name="four_star">Very good</string>
     <string name="five_star">Amazing</string>
+=======
+>>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
 </resources>
