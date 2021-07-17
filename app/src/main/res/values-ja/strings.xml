@@ -32,7 +32,6 @@
     <string name="pin_code_warning">PINコード無効</string>
     <string name="done_button">終了</string>
     <string name="date_picker_title">日選択</string>
-<<<<<<< HEAD
     <string name="skip">後で</string>
     <string name="service_hint">興味のあるサービスを選択してください。VinIDがより正確に提案します</string>
     <string name="food">飲食</string>

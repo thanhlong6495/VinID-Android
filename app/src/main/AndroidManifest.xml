@@ -13,7 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VinID">
         <activity
-<<<<<<< HEAD
             android:name="HomeActivities.Profile"
             android:exported="true" />
         <activity android:name="HomeActivities.Inbox"
@@ -45,10 +44,7 @@
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity
             android:name="RegisterActivities.MainActivity"
-            android:screenOrientation="portrait"
-=======
-            android:name="Activities.PersonalInformation"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:screenOrientation="portrait"/>
         <activity
             android:name="Activities.PinCode"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
