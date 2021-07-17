@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Sub_View2"
     tools:context="HomeActivities.MyWallet">
@@ -111,7 +110,6 @@
             <TextView
                 style="@style/Sub_View1.TextView_Copyright" />
         </LinearLayout>
-
     </ScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         style="@style/Sub_View4.Bottom_Navigation_Bar"

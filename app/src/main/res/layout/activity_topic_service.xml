@@ -4,7 +4,6 @@
     style="@style/Activity_Style"
     tools:context="RegisterActivities.TopicService"
     android:orientation="vertical">
-
     <TextView
         android:onClick="goToHomePage"
         android:id="@+id/tv_skip_choose_topic"

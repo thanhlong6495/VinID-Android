@@ -27,7 +27,6 @@
                     style="@style/Profile_Symbol"
                     android:src="@drawable/symbol"/>
             </RelativeLayout>
-
             <GridView
                 android:layout_below="@+id/account_name"
                 android:id="@+id/gridview_profile"

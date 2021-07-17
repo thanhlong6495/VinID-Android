@@ -1,9 +1,4 @@
-<<<<<<< HEAD:app/src/main/java/RegisterActivities/PinCode.java
 package RegisterActivities;
-=======
-package Activities;
->>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce:app/src/main/java/Activities/PinCode.java
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -18,6 +13,8 @@ import android.widget.Toast;
 
 import com.longtrang.vinid.R;
 
+import RegisterActivities.ConfirmOTP;
+import RegisterActivities.PersonalInformation;
 public class PinCode extends AppCompatActivity {
     Button   buttonNext;
     EditText editTextPin1;

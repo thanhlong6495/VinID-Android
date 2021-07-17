@@ -24,6 +24,5 @@
     <Button
         android:id="@+id/btn_done_date_picker"
         style="@style/btn_done"
-        android:text="@string/done_button"
-        />
+        android:text="@string/done_button" />
 </LinearLayout>

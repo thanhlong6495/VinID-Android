@@ -52,7 +52,6 @@
                 style="@style/Banner_Style"
                 android:src="@drawable/banner_discount"/>
         </LinearLayout>
-
     </ScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         style="@style/Sub_View4.Bottom_Navigation_Bar"

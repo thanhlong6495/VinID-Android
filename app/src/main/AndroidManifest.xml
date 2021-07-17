@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.longtrang.vinid">
-
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:configChanges="locale|orientation"
@@ -43,21 +41,7 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity
-            android:name="RegisterActivities.MainActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name="Activities.PinCode"
-            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
-        <activity
-            android:name="Activities.ConfirmOTP"
-            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
-        <activity
-            android:name="Activities.PhoneNumberRegister"
-            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
-        <activity
-            android:name="Activities.MainActivity"
->>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:name="RegisterActivities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -65,5 +49,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

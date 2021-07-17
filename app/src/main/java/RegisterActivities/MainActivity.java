@@ -1,11 +1,5 @@
-<<<<<<< HEAD:app/src/main/java/RegisterActivities/MainActivity.java
 package RegisterActivities;
-=======
-package Activities;
->>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce:app/src/main/java/Activities/MainActivity.java
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Build;
@@ -14,13 +8,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-<<<<<<< HEAD:app/src/main/java/RegisterActivities/MainActivity.java
 import com.longtrang.vinid.R;
-=======
-
-import com.longtrang.vinid.R;
-
->>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce:app/src/main/java/Activities/MainActivity.java
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,10 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         assigningView();
-<<<<<<< HEAD:app/src/main/java/RegisterActivities/MainActivity.java
         setLanguge();
-
-=======
         textViewLanguageVietnamese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 onChangeLanguage(mMyLocale);
             }
         });
->>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce:app/src/main/java/Activities/MainActivity.java
     }
     public void assigningView() {
         textViewLanguageVietnamese  = findViewById(R.id.btnVietnamese);

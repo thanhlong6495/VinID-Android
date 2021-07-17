@@ -1,5 +1,4 @@
 package RegisterActivities;
-
 import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -10,7 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import static com.longtrang.vinid.R.*;
-
 public class ConfirmOTP extends AppCompatActivity {
     private TextView textViewPhonenumberChange;
     private TextView textViewOTPSendAgain;

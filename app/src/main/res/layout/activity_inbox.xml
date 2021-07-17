@@ -7,7 +7,6 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         style="@style/Sub_View4.Bottom_Navigation_Bar"
         android:id="@+id/bottom_navigation_bar">
-
     </com.google.android.material.bottomnavigation.BottomNavigationView>
     <TextView
         android:id="@+id/tv_inbox_title"
@@ -34,7 +33,6 @@
                 style="@style/TextView_Content"
                 android:text="@string/notice_content"/>
         </LinearLayout>
-
     </RelativeLayout>
     <LinearLayout
         android:id="@+id/tv_inbox_promotion"
@@ -73,12 +71,9 @@
                 style="@style/TextView_Content"
                 android:text="@string/new_content"/>
         </LinearLayout>
-
     </LinearLayout>
-
     <Button
         style="@style/btn_create_new_message"
         android:layout_above="@+id/bottom_navigation_bar"
         android:text="@string/create_new_message" />
-
 </RelativeLayout>
