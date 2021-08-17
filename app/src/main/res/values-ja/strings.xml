@@ -50,14 +50,6 @@
     <string name="account">アカウント</string>
     <string name="hint_search">検索</string>
     <string name="information_warning">全く情報を入力して下さい</string>
-<!--    <string name="link_bank_account">-->
-<!--        <br>-->
-<!--            銀行口座リンク、\n-->
-<!--        </br>-->
-<!--        <br>-->
-<!--           簡単な支払い-->
-<!--        </br>-->
-<!--    </string>-->
     <string name="link_now">すぐリンク ></string>
     <string name="grocery">市場</string>
     <string name="Vinmart">ヴィンマート</string>

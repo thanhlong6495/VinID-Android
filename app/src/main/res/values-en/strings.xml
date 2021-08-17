@@ -50,14 +50,6 @@
     <string name="account">Account</string>
     <string name="hint_search">Find every thing</string>
     <string name="information_warning">Please enter all the information </string>
-<!--    <string name="link_bank_account">-->
-<!--        <br>-->
-<!--           Link with your bank,\n-->
-<!--        </br>-->
-<!--        <br>-->
-<!--            pay with convinience-->
-<!--        </br>-->
-<!--    </string>-->
     <string name="link_now">Link now ></string>
     <string name="grocery">Grocery</string>
     <string name="Vinmart">Vinmart</string>

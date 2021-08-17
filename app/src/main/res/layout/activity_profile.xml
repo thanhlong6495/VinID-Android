@@ -4,12 +4,12 @@
     style="@style/Sub_View2.Profile_Activity_Style"
     tools:context="HomeActivities.Profile">
         <TextView
-            android:id="@+id/tv_profile_title"
+            android:id="@+id/tv_Profile_Title"
             android:text="@string/profile"
             style="@style/TextView_Title"/>
         <ScrollView
             style="@style/Sub_View2.ScrollView_Style"
-            android:layout_below="@id/tv_profile_title">
+            android:layout_below="@id/tv_Profile_Title">
         <RelativeLayout
             style="@style/Sub_View4">
             <RelativeLayout
@@ -19,10 +19,12 @@
                     android:id="@+id/profile_avatar"
                     style="@style/Profile_Avatar" />
                 <TextView
-                    android:id="@+id/tv_profile_information"
-                    android:layout_toRightOf="@+id/profile_avatar"
+                    android:id="@+id/tv_Profile_Infor"
+                    style="@style/TextView_Profile_Information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/profile_avatar"
-                    style="@style/TextView_Profile_Information"/>
+                    android:layout_toRightOf="@+id/profile_avatar" />
                 <ImageView
                     style="@style/Profile_Symbol"
                     android:src="@drawable/symbol"/>

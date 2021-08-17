@@ -8,55 +8,58 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.longtrang.vinid.R;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import static com.longtrang.vinid.R.*;
+
 public class ConfirmOTP extends AppCompatActivity {
-    private TextView textViewPhonenumberChange;
-    private TextView textViewOTPSendAgain;
-    private TextView textViewOTPGuide;
-    private TextView textViewCountDownTimer;
-    private EditText editTextOTP;
+    @BindView(R.id.tv_OTP_Send_Again) TextView textViewOTPSendAgain;
+    @BindView(id.tv_OTP_Guide) TextView textViewOTPGuide;
+    @BindView(R.id.edt_OTP_Code) EditText editTextOTP;
+    @BindView(R.id.tv_CountDown_Timer) TextView textViewCountDownTimer;
     String phoneNumber;
     private CountDownTimer countDownTimer;
     private int remainingTime;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(layout.confirm_otp);
-        assigningView();
+        ButterKnife.bind(this);
         editTextOTP.requestFocus();
-        getData();
+        getPhoneNumber();
         setCountDownTimer();
-        textViewOTPSendAgain.setOnClickListener(v -> {
+        textViewOTPSendAgain.setOnClickListener((View v) -> {
             countDownTimer.cancel();
             setCountDownTimer();
         });
     }
-    public void assigningView() {
-        textViewCountDownTimer      = findViewById(id.tv_countdown_timer);
-        textViewOTPGuide            = findViewById(id.tv_enter_otp_guide);
-        textViewPhonenumberChange   = findViewById(id.tv_phonenumber_change);
-        textViewOTPSendAgain        = findViewById(id.tv_OTP_send_again);
-        editTextOTP                 = findViewById(id.edt_otp_code);
-    }
-    public void getData() {
+    //get the registered phone number
+    public void getPhoneNumber() {
         Intent intent = getIntent();
         phoneNumber = intent.getStringExtra("phonenumber");
         textViewOTPGuide.setText(new StringBuilder().append(getResources().getString(string.enter_otp_code)).append(" ").append(phoneNumber).toString());
     }
-    public void goToPinCode(View view) {
-        if (editTextOTP.length() == getResources().getInteger(integer.otp_code)) {
+    //click on next button
+    @OnClick(id.btn_Next_OTP)
+    protected void goToPinCode(View view) {
+        if (editTextOTP.length() == getResources().getInteger(integer.OTP_CODE_DIGIT)) {
+            countDownTimer.cancel();
             startActivity(new Intent(ConfirmOTP.this, PinCode.class));
         }
         else {
             Toast.makeText(this, getResources().getString(string.otp_code_warning), Toast.LENGTH_LONG).show();
         }
     }
-    public void backToPhoneNumberRegister(View view) {
+    //click on back arrow
+    @OnClick(id.btn_Back_OTP)
+     protected void backToPhoneNumberRegister() {
         startActivity(new Intent(ConfirmOTP.this, PhoneNumberRegister.class));
     }
     private void setCountDownTimer() {
-        countDownTimer = new CountDownTimer(getResources().getInteger(integer.otp_countdowntimer), getResources().getInteger(integer.convert_time)) {
+        countDownTimer = new CountDownTimer(getResources().getInteger(integer.OTP_COUNTDOWNTIMER),
+                getResources().getInteger(integer.CONVERT_TIME)) {
             @Override
             public void onTick(long millisUntilFinished) {
                 editTextOTP.setFocusableInTouchMode(true);

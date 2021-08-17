@@ -10,21 +10,23 @@ import android.view.MenuItem;
 import android.widget.GridView;
 import android.widget.RatingBar;
 import android.widget.TextView;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.navigation.NavigationBarView;
 import com.longtrang.vinid.R;
 import java.util.ArrayList;
 import GridViewProfile.Category;
 import GridViewProfile.CategoryAdapter;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class Profile extends AppCompatActivity {
-    private BottomNavigationView bottomNavigationView;
-    GridView gridViewProfile;
+    @BindView(R.id.bottom_navigation_bar) NavigationBarView bottomNavigationView;
+    @BindView(R.id.gridview_profile) GridView gridViewProfile;
     ArrayList<Category> arrayList;
-    public TextView textViewProfileInformation;
+    @BindView(R.id.tv_Profile_Infor) TextView textViewProfileInformation;
     private final String defaultPhoneNumber = "phonenumber";
     private final String defaultFullName = "fullname";
-    private RatingBar ratingBar;
+    @BindView(R.id.rating_bar) RatingBar ratingBar;
     private RatingBar ratingBarDiaglog;
     private BottomSheetDialog bottomSheetDialog;
 
@@ -32,7 +34,7 @@ public class Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        assigningView();
+        ButterKnife.bind(this);
         getInformation();
         addViewToArrayList();
         setAdapter();
@@ -40,12 +42,7 @@ public class Profile extends AppCompatActivity {
         setItemSelectedFromListener();
         setRatingBar();
     }
-    private void assigningView() {
-        ratingBar                   = findViewById(R.id.rating_bar);
-        textViewProfileInformation  = findViewById(R.id.tv_profile_information);
-        bottomNavigationView        = findViewById(R.id.bottom_navigation_bar);
-        gridViewProfile             = findViewById(R.id.gridview_profile);
-    }
+
     private void addViewToArrayList() {
         arrayList = new ArrayList<>();
         arrayList.add(new Category(R.drawable.img_point, getResources().getString(R.string.point)));
@@ -71,10 +68,12 @@ public class Profile extends AppCompatActivity {
         gridViewProfile.setAdapter(categoryAdapter);
     }
     private void setItemSelectedFromListener() {
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
+                    case R.id.nav_account:
+                        return true;
                     case R.id.nav_home:
                         startActivity(new Intent(getApplicationContext(), HomePage.class));
                         overridePendingTransition(0, 0);
@@ -86,8 +85,6 @@ public class Profile extends AppCompatActivity {
                     case R.id.nav_inbox:
                         startActivity(new Intent(getApplicationContext(), Inbox.class));
                         overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.nav_account:
                         return true;
                     default:
                         throw new IllegalStateException("Unexpected value: " + item.getItemId());

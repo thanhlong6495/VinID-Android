@@ -21,13 +21,16 @@
             android:name="HomeActivities.HomePage"
             android:exported="true" />
         <activity
+            android:exported="true"
             android:name="RegisterActivities.TopicService"
             android:screenOrientation="portrait" />
         <activity
+            android:exported="true"
             android:name="RegisterActivities.PersonalInformation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
+            android:exported="true"
             android:name="RegisterActivities.PinCode"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
@@ -39,9 +42,11 @@
         <activity
             android:name="RegisterActivities.PhoneNumberRegister"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
         <activity
             android:name="RegisterActivities.MainActivity">
+            android:exported="true"
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

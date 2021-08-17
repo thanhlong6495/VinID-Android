@@ -16,13 +16,13 @@
             style="@style/Normal_TextView"
             android:text="@string/personal_information_guide" />
         <EditText
-            android:id="@+id/edt_full_name"
+            android:id="@+id/edt_Full_Name"
             style="@style/Normal_EditText"
             android:hint="@string/full_name"
             android:inputType="textPersonName" />
         <FrameLayout style="@style/Sub_View4">
             <EditText
-                android:id="@+id/edt_date_of_birth"
+                android:id="@+id/edt_Date_Of_Birth"
                 style="@style/Normal_EditText"
                 android:focusable="false"
                 android:hint="@string/date_of_birth"
@@ -35,7 +35,7 @@
                 android:src="@drawable/icon_callendar" />
         </FrameLayout>
         <EditText
-            android:id="@+id/edt_email"
+            android:id="@+id/edt_Email"
             style="@style/Normal_EditText"
             android:hint="@string/email_address" />
         <TextView
@@ -45,7 +45,7 @@
     </LinearLayout>
     <Button
         android:onClick="goToTopicService"
-        android:id="@+id/btn_next_personal_information"
+        android:id="@+id/btn_Next_Persional_Infor"
         style="@style/btn_next"
         android:text="@string/btn_continue"/>
 </RelativeLayout>

@@ -1,52 +1,37 @@
 package RegisterActivities;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 import com.longtrang.vinid.R;
-
 import HomeActivities.HomePage;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class TopicService extends AppCompatActivity {
-    protected ToggleButton toggleButtonEating;
-    protected ToggleButton toggleButtonShopping;
-    protected ToggleButton toggleButtonVincom;
-    protected ToggleButton toggleButtonVinhomes;
-    protected ToggleButton toggleButtonPoint;
-    protected ToggleButton toggleButtonHomeHelper;
-    protected ToggleButton toggleButtonBuyTicket;
-    protected ToggleButton toggleButtonPayment;
-    protected ToggleButton toggleButtonVoucher;
-    protected TextView textViewSkip;
-    protected Button buttonNext;
+    protected @BindView(R.id.btn_eating) ToggleButton toggleButtonEating;
+    protected @BindView(R.id.btn_shopping) ToggleButton toggleButtonShopping;
+    protected @BindView(R.id.btn_vincom) ToggleButton toggleButtonVincom;
+    protected @BindView(R.id.btn_vinhomes) ToggleButton toggleButtonVinhomes;
+    protected @BindView(R.id.btn_point) ToggleButton toggleButtonPoint;
+    protected @BindView(R.id.btn_home_helper) ToggleButton toggleButtonHomeHelper;
+    protected @BindView(R.id.btn_buy_ticket) ToggleButton toggleButtonBuyTicket;
+    protected @BindView(R.id.btn_payment) ToggleButton toggleButtonPayment;
+    protected @BindView(R.id.btn_voucher) ToggleButton toggleButtonVoucher;
+    protected @BindView(R.id.tv_skip_choose_topic) TextView textViewSkip;
     Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_topic_service);
-        assigningView();
+        ButterKnife.bind(this);
     }
-    private void assigningView() {
-        toggleButtonEating      = findViewById(R.id.btn_eating);
-        toggleButtonShopping    = findViewById(R.id.btn_shopping);
-        toggleButtonVincom      = findViewById(R.id.btn_vincom);
-        toggleButtonVinhomes    = findViewById(R.id.btn_vinhomes);
-        toggleButtonPoint       = findViewById(R.id.btn_point);
-        toggleButtonHomeHelper  = findViewById(R.id.btn_home_helper);
-        toggleButtonBuyTicket   = findViewById(R.id.btn_buy_ticket);
-        toggleButtonPayment     = findViewById(R.id.btn_payment);
-        toggleButtonVoucher     = findViewById(R.id.btn_voucher);
-        textViewSkip            = findViewById(R.id.tv_skip_choose_topic);
-        buttonNext              = findViewById(R.id.btn_start_using);
-    }
-
-    public void goToHomePage(View view) {
+    @OnClick({R.id.btn_start_using,R.id.tv_skip_choose_topic})
+    protected void goToHomePage() {
         intent = new Intent(TopicService.this, HomePage.class);
         startActivity(intent);
     }

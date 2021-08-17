@@ -8,7 +8,7 @@
         style="@style/Sub_View4"
         android:orientation="horizontal">
         <ImageButton
-            android:id="@+id/img_btn_close_date_picker_dialog"
+            android:id="@+id/btn_Close_DatePicker"
             android:layout_weight="1"
             style="@style/Sub_View1"
             android:src="@drawable/img_button_close"/>
@@ -19,10 +19,10 @@
             android:text="@string/date_picker_title" />
     </LinearLayout>
     <DatePicker
-        android:id="@+id/date_picker_spinner"
+        android:id="@+id/Date_Picker_Spinner"
         style="@style/Date_Picker_Dialog_Fragment" />
     <Button
-        android:id="@+id/btn_done_date_picker"
+        android:id="@+id/btn_Done_DatePicker"
         style="@style/btn_done"
         android:text="@string/done_button" />
 </LinearLayout>

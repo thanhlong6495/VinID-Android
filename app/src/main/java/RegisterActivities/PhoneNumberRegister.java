@@ -13,29 +13,25 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.longtrang.vinid.R;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class PhoneNumberRegister extends AppCompatActivity {
-    TextView textViewPhoneNumber;
-    TextView textViewInvitationCode;
-    TextView textViewPolicy;
-    EditText editTextPhoneNumber;
-    Button buttonNext;
+    @BindView(R.id.tv_invitation_code) TextView textViewInvitationCode;
+    @BindView(R.id.edt_phonenumber_register) EditText editTextPhoneNumber;
+    @BindView(R.id.btn_Next_PhoneNumber) Button buttonNext;
     String phoneNumber;
     Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.phone_number_register);
-        assigningView();
+        ButterKnife.bind(this);
         editTextPhoneNumber.requestFocus();
     }
-    public void assigningView() {
-        textViewPhoneNumber = findViewById(R.id.tv_enter_phonenumber_register);
-        textViewInvitationCode = findViewById(R.id.tv_invitation_code);
-        textViewPolicy = findViewById(R.id.tv_policy);
-        editTextPhoneNumber = findViewById(R.id.edt_phonenumber_register);
-        buttonNext = findViewById(R.id.btn_next);
-    }
-    public void clickOnInvitationCode(View view) {
+    @OnClick(R.id.tv_invitation_code)
+     void clickOnInvitationCode() {
         Dialog dialog = new Dialog(PhoneNumberRegister.this);
         dialog.setContentView(R.layout.dialog_invitation_code);
         dialog.show();
@@ -43,8 +39,9 @@ public class PhoneNumberRegister extends AppCompatActivity {
         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
     }
-    public void goToConfirmOTP(View view) {
-        if (editTextPhoneNumber.length() < getResources().getInteger(R.integer.phone_number)) {
+    @OnClick(R.id.btn_Next_PhoneNumber)
+    protected void goToConfirmOTP() {
+        if (editTextPhoneNumber.length() < getResources().getInteger(R.integer.PHONE_NUMBER_DIGIT)) {
             Toast.makeText(this, getResources().getString(R.string.phone_number_warning), Toast.LENGTH_LONG).show();
             }
         else {

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/Sub_View2"
     tools:context="HomeActivities.HomePage">
     <ScrollView
@@ -20,7 +19,7 @@
                     android:layout_weight="9"
                     style="@style/Sub_View2.Search_Bar"
                     android:background="@drawable/search_bar"
-                    android:text="@string/hint_search" />
+                    android:hint="@string/hint_search" />
                 <ImageView
                     style="@style/Sub_View1"
                     android:layout_marginRight="@dimen/dimen10"
@@ -42,7 +41,7 @@
             </HorizontalScrollView>
             <!--            Services-->
             <GridView
-                android:id="@+id/gridview_services"
+                android:id="@+id/Gridview_Services"
                 style="@style/GridView_HomePage_Style">
             </GridView>
             <TextView

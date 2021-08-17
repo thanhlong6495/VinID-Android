@@ -7,35 +7,34 @@
         android:id="@+id/linear_title"
         style="@style/Sub_View4">
         <ImageView
-            android:onClick="backToPhoneNumberRegister"
-            android:id="@+id/btn_back"
+            android:id="@+id/btn_Back_OTP"
             style="@style/Sub_View1"
             android:src="@drawable/icon_back_button"/>
         <TextView
-            android:id="@+id/tv_otp_guide"
+            android:id="@+id/tv_OTP_Title"
             style="@style/TextView_Title"
             android:layout_height="match_parent"
             android:text="@string/otp_confirm" />
     </LinearLayout>
     <TextView
         android:layout_marginTop="@dimen/dimen20"
-        android:id="@+id/tv_enter_otp_guide"
+        android:id="@+id/tv_OTP_Guide"
         style="@style/Normal_TextView"
         android:text="@string/enter_otp_code"
         android:layout_below="@+id/linear_title" />
     <LinearLayout
         android:id="@+id/linear_otp_title"
         android:weightSum="4"
-        android:layout_below="@+id/tv_enter_otp_guide"
+        android:layout_below="@+id/tv_OTP_Guide"
         style="@style/Sub_View4"
         android:layout_marginTop="@dimen/dimen30">
         <EditText
-            android:id="@+id/edt_otp_code"
+            android:id="@+id/edt_OTP_Code"
             android:layout_weight="3"
             style="@style/OTP_EditText"
             android:hint="@string/otp_code_hint" />
         <TextView
-            android:id="@+id/tv_countdown_timer"
+            android:id="@+id/tv_CountDown_Timer"
             android:layout_weight="1"
             style="@style/Sub_View3.CountDownTimer"/>
     </LinearLayout>
@@ -47,15 +46,14 @@
             style="@style/Linked_TextView"
             android:text="@string/phone_number_change"/>
         <TextView
-            android:id="@+id/tv_OTP_send_again"
+            android:id="@+id/tv_OTP_Send_Again"
             style="@style/Linked_TextView"
             android:layout_alignParentRight="true"
             android:text="@string/otp_send_again"
             android:gravity="end"
             android:layout_alignParentEnd="true" />
         <Button
-            android:onClick="goToPinCode"
-            android:id="@+id/btn_otp_confirm"
+            android:id="@+id/btn_Next_OTP"
             style="@style/btn_next"
             android:text="@string/btn_continue"/>
     </RelativeLayout>

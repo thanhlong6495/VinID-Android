@@ -50,14 +50,6 @@
     <string name="account">Tài khoản</string>
     <string name="hint_search">Tìm kiếm mọi thứ</string>
     <string name="information_warning">Vui lòng nhập đầy đủ các thông tin</string>
-<!--    <string name="link_bank_account">-->
-<!--        <br>-->
-<!--            Liên kết ngân hàng,\n-->
-<!--        </br>-->
-<!--        <br>-->
-<!--            thanh toán dễ dàng-->
-<!--        </br>-->
-<!--    </string>-->
     <string name="link_now">Liên kết ngay ></string>
     <string name="grocery">Đi chợ</string>
     <string name="Vinmart">Vinmart</string>

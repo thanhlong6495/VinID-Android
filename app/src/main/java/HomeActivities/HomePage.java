@@ -2,37 +2,37 @@ package HomeActivities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.GridView;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 import com.longtrang.vinid.R;
+import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import GridViewServices.Services;
 import GridViewServices.ServicesAdapter;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class HomePage extends AppCompatActivity {
-    GridView gridViewServices;
+    @BindView(R.id.Gridview_Services) GridView gridViewServices;
     ArrayList<Services> arrayList;
-    private BottomNavigationView bottomNavigationItemView;
+    @BindView(R.id.bottom_navigation_bar) NavigationBarView bottomNavigationItemView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-        assigningView();
+        ButterKnife.bind(this);
         addViewToArrayList();
         setAdapter();
         bottomNavigationItemView.setSelectedItemId(R.id.nav_home);
         setItemSelectedFromListener();
-
     }
     private void addViewToArrayList() {
         arrayList   = new ArrayList<>();
         arrayList.add(new Services(getResources().getString(R.string.grocery), R.drawable.icon_grocery));
-        arrayList.add(new Services(getResources().getString(R.string.food),
-                R.drawable.icon_eating));
+        arrayList.add(new Services(getResources().getString(R.string.food), R.drawable.icon_eating));
         arrayList.add(new Services(getResources().getString(R.string.Vinmart), R.drawable.icon_vinmart));
         arrayList.add(new Services(getResources().getString(R.string.Vincom), R.drawable.icon_vincom));
         arrayList.add(new Services(getResources().getString(R.string.voucher), R.drawable.icon_voucher));
@@ -43,15 +43,10 @@ public class HomePage extends AppCompatActivity {
         ServicesAdapter servicesAdapter = new ServicesAdapter(this, R.layout.services, arrayList);
         gridViewServices.setAdapter(servicesAdapter);
     }
-    private void assigningView() {
-        gridViewServices            = findViewById(R.id.gridview_services);
-        bottomNavigationItemView    = findViewById(R.id.bottom_navigation_bar);
-    }
     private void setItemSelectedFromListener() {
-        bottomNavigationItemView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @SuppressLint("NonConstantResourceId")
+        bottomNavigationItemView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.nav_home:
                         return true;

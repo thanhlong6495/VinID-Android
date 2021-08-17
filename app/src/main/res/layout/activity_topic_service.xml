@@ -5,7 +5,6 @@
     tools:context="RegisterActivities.TopicService"
     android:orientation="vertical">
     <TextView
-        android:onClick="goToHomePage"
         android:id="@+id/tv_skip_choose_topic"
         style="@style/Linked_TextView"
         android:layout_alignParentRight="true"
@@ -89,7 +88,6 @@
             android:textOff="@string/voucher"/>
     </LinearLayout>
     <Button
-        android:onClick="goToHomePage"
         android:id="@+id/btn_start_using"
         style="@style/btn_next"
         android:text="@string/begin_using"/>

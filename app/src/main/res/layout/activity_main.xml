@@ -20,7 +20,7 @@
             android:src="@drawable/vn_flag"/>
         <TextView
             android:gravity="center"
-            android:id="@+id/btnVietnamese"
+            android:id="@+id/tv_Vietnamese"
             style="@style/Sub_View3"
             android:layout_weight="1"
             android:text="@string/langugge_vi"
@@ -31,7 +31,7 @@
             style="@style/Sub_View1"
             android:src="@drawable/en_flag"/>
         <TextView
-            android:id="@+id/btnEnglish"
+            android:id="@+id/tv_English"
             style="@style/Sub_View3"
             android:layout_weight="1"
             android:gravity="center"
@@ -43,7 +43,7 @@
             style="@style/Sub_View1"
             android:src="@drawable/jp_flag"/>
         <TextView
-            android:id="@+id/btnJapanese"
+            android:id="@+id/tv_Japanese"
             style="@style/Sub_View3"
             android:layout_weight="1"
             android:gravity="center"
@@ -82,9 +82,8 @@
             android:text="@string/phone_number_regis" />
         <EditText
             android:focusableInTouchMode="false"
-            android:onClick="goToRegisForm"
             android:layout_weight="1"
-            android:id="@+id/phonenumber"
+            android:id="@+id/PhoneNumber"
             style="@style/Normal_EditText"
             android:hint="@string/phone_number_edit"/>
     </LinearLayout>

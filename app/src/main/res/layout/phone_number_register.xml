@@ -13,12 +13,13 @@
         android:layout_below="@+id/tv_enter_phonenumber_register"
         android:layout_marginTop="@dimen/dimen30"
         android:hint="@string/phone_number_edit" />
+
     <TextView
-        android:onClick="clickOnInvitationCode"
         android:id="@+id/tv_invitation_code"
-        android:layout_marginTop="@dimen/dimen10"
-        android:layout_below="@+id/edt_phonenumber_register"
         style="@style/Linked_TextView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edt_phonenumber_register"
+        android:layout_marginTop="@dimen/dimen10"
         android:text="@string/invitation_code"
         android:textColor="@color/linked_text_color" />
     <LinearLayout
@@ -32,8 +33,7 @@
             android:textColor="@color/policy_text_color"
             android:layout_marginBottom="@dimen/dimen10"/>
         <Button
-            android:onClick="goToConfirmOTP"
-            android:id="@+id/btn_next"
+            android:id="@+id/btn_Next_PhoneNumber"
             android:text="@string/btn_continue"
             style="@style/btn_next"/>
     </LinearLayout>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="phone_number">10</integer>
-    <integer name="pin_code">6</integer>
-    <integer name="otp_code">6</integer>
-    <integer name="otp_countdowntimer">90000</integer>
-    <integer name="convert_time">1000</integer>
+    <integer name="PHONE_NUMBER_DIGIT">11</integer>
+    <integer name="PIN_CODE_DIGIT">6</integer>
+    <integer name="OTP_CODE_DIGIT">6</integer>
+    <integer name="OTP_COUNTDOWNTIMER">90000</integer>
+    <integer name="CONVERT_TIME">1000</integer>
     <integer name="My_Wallet_GridLayout_RowCount">2</integer>
     <integer name="My_Wallet_GridLayout_ColumnCount">2</integer>
     <integer name="Home_Page_GridView_NumColumns">4</integer>

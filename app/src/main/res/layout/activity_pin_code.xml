@@ -8,7 +8,7 @@
         style="@style/Sub_View4">
         <ImageView
             android:onClick="backToConfirmOTP"
-            android:id="@+id/btn_back_PIN"
+            android:id="@+id/btn_Back_PIN"
             style="@style/Sub_View1"
             android:src="@drawable/icon_back_button"/>
         <TextView
@@ -67,8 +67,7 @@
             android:gravity="end" />
     </LinearLayout>
     <Button
-        android:onClick="goToPersonalInfomation"
-        android:id="@+id/btn_next_PIN_code"
+        android:id="@+id/btn_Next_PinCode"
         style="@style/btn_next"
         android:text="@string/btn_continue" />
 </RelativeLayout>

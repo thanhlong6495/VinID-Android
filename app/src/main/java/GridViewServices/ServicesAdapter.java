@@ -7,9 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.longtrang.vinid.R;
-
 import java.util.List;
 
 public class ServicesAdapter extends BaseAdapter {

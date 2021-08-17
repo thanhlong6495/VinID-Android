@@ -1,47 +1,45 @@
 package RegisterActivities;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import Fragments.DatePickerFragment;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import com.longtrang.vinid.R;
 
 public class PersonalInformation extends AppCompatActivity {
-    EditText editTextFullName;
-    EditText editTextDateOfBirth;
-    EditText editTextEmail;
-    Button buttonNext;
-    public String fullName;
+    @BindView(R.id.edt_Full_Name) EditText editTextFullName;
+    @BindView(R.id.edt_Date_Of_Birth) EditText editTextDateOfBirth;
+    @BindView(R.id.edt_Email) EditText editTextEmail;
     @SuppressLint("ResourceAsColor")
+    protected String fullName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_information);
-        assigningView();
+        ButterKnife.bind(this);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             editTextDateOfBirth.setShowSoftInputOnFocus(false);
         }
     }
-    public void showDatePickerDialog(View view) {
+
+    @OnClick(R.id.edt_Date_Of_Birth)
+    //pop up dialogfragment
+    protected void onClickDateOfBirth(){
         DatePickerFragment pickDialog = new DatePickerFragment();
         pickDialog.show(getFragmentManager(), "datepicker");
     }
-    public void assigningView() {
-        editTextFullName    = findViewById(R.id.edt_full_name);
-        editTextDateOfBirth = findViewById(R.id.edt_date_of_birth);
-        editTextEmail       = findViewById(R.id.edt_email);
-        buttonNext          = findViewById(R.id.btn_next_personal_information);
-    }
 
-    public void goToTopicService(View view) {
+    //click on next button
+    @OnClick(R.id.btn_Next_Persional_Infor)
+    protected void goToTopicService() {
         if (editTextFullName.length() > 0 && editTextDateOfBirth.length() > 0 && editTextEmail.length() > 0) {
             Intent intent = new Intent(PersonalInformation.this, TopicService.class);
             fullName = editTextFullName.getText().toString();
