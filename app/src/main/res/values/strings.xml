@@ -118,4 +118,5 @@
     <string name="three_star">Tốt</string>
     <string name="four_star">Rất tốt</string>
     <string name="five_star">Tuyệt vời</string>
+    <string name="thanks_for_rating">Cảm ơn bạn đã đánh giá</string>
 </resources>

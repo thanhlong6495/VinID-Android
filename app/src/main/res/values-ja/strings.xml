@@ -102,6 +102,6 @@
     <string name="three_star">良い</string>
     <string name="four_star">とても良い</string>
     <string name="five_star">素晴らしい</string>
-=======
->>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
+    <string name="thanks_for_rating">評価ありがとうございました</string>
+
 </resources>

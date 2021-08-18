@@ -7,9 +7,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.navigation.NavigationBarView;
 import com.longtrang.vinid.R;
@@ -22,27 +26,29 @@ import butterknife.ButterKnife;
 public class Profile extends AppCompatActivity {
     @BindView(R.id.bottom_navigation_bar) NavigationBarView bottomNavigationView;
     @BindView(R.id.gridview_profile) GridView gridViewProfile;
-    ArrayList<Category> arrayList;
     @BindView(R.id.tv_Profile_Infor) TextView textViewProfileInformation;
+    @BindView(R.id.rating_bar) RatingBar ratingBar;
     private final String defaultPhoneNumber = "phonenumber";
     private final String defaultFullName = "fullname";
-    @BindView(R.id.rating_bar) RatingBar ratingBar;
-    private RatingBar ratingBarDiaglog;
+    private RatingBar ratingBarDialog;
     private BottomSheetDialog bottomSheetDialog;
+    private Button buttonSendFeedBack;
+    private ImageView buttonCloseDialog;
+    ArrayList<Category> arrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         ButterKnife.bind(this);
-        getInformation();
+        getUserInformation();
         addViewToArrayList();
         setAdapter();
         bottomNavigationView.setSelectedItemId(R.id.nav_account);
         setItemSelectedFromListener();
+        initialBottomSheetDialog();
         setRatingBar();
     }
-
     private void addViewToArrayList() {
         arrayList = new ArrayList<>();
         arrayList.add(new Category(R.drawable.img_point, getResources().getString(R.string.point)));
@@ -93,65 +99,66 @@ public class Profile extends AppCompatActivity {
         });
     }
     @SuppressLint("SetTextI18n")
-    private void getInformation() {
+    private void getUserInformation() {
         SharedPreferences sharedPreferences = getSharedPreferences("userInformation", MODE_PRIVATE);
         textViewProfileInformation.setText(new StringBuilder().append(sharedPreferences.getString("fullname",
                 defaultFullName)).append("\n").append(sharedPreferences.getString("phonenumber",
                 defaultPhoneNumber)).toString());
     }
-    private void setBottomSheetDialog() {
-        bottomSheetDialog = new BottomSheetDialog(this, R.style.AppBottomSheetDialogTheme);
+    private void initialBottomSheetDialog() {
+        bottomSheetDialog = new BottomSheetDialog(Profile.this, R.style.AppBottomSheetDialogTheme);
         bottomSheetDialog.setContentView(R.layout.profile_bottom_sheet_dialog);
-        ratingBarDiaglog = bottomSheetDialog.findViewById(R.id.rating_bar_dialog);
-        bottomSheetDialog.show();
-    }
-    private void setRatingBar() {
-        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+        ratingBarDialog = bottomSheetDialog.findViewById(R.id.rating_bar_dialog);
+        buttonSendFeedBack = bottomSheetDialog.findViewById(R.id.btn_Send_FeedBack);
+        buttonCloseDialog = bottomSheetDialog.findViewById(R.id.btn_Close_Dialog);
+        ratingBarDialog.setRating(ratingBar.getRating());
+        buttonSendFeedBack.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                switch ((int) rating) {
-                    case 1:
-                        try {
-                            Thread.sleep(500);
-                            setBottomSheetDialog();
-                            ratingBarDiaglog.setRating(ratingBar.getRating());
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    case 2:
-                        try {
-                            Thread.sleep(500);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                        setBottomSheetDialog();
-                        ratingBarDiaglog.setNumStars(2);
-                    case 3:
-                        try {
-                            Thread.sleep(500);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                        setBottomSheetDialog();
-                        ratingBarDiaglog.setNumStars(3);
-                    case 4:
-                        try {
-                            Thread.sleep(500);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                        setBottomSheetDialog();
-                        ratingBarDiaglog.setNumStars(4);
-                    case 5:
-                        try {
-                            Thread.sleep(500);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                        setBottomSheetDialog();
-                        ratingBarDiaglog.setNumStars(5);
+            public void onClick(View v) {
+                ratingBar.setRating(ratingBarDialog.getRating());
+                Toast.makeText(Profile.this, getResources().getString(R.string.thanks_for_rating),
+                        Toast.LENGTH_LONG).show();
+                try{
+                    Thread.sleep(1500);
+                    bottomSheetDialog.dismiss();
+                }
+                catch(InterruptedException e){
+                    e.printStackTrace();
                 }
             }
         });
+        buttonCloseDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ratingBar.setRating(0);
+                bottomSheetDialog.dismiss();
+            }
+        });
+        onBackPress();
+    }
+    private void setRatingBar() {
+        ratingBar.setOnRatingBarChangeListener((ratingBar, rating, fromUser) -> {
+            ratingBarDialog.setRating(ratingBar.getRating());
+            switch ((int) rating) {
+                case 1 : case 2 : case 3: case 4: case 5:
+                checkStar();
+                break;
+            }
+        });
+    }
+    private void checkStar(){
+        try {
+            Thread.sleep(400);
+            ratingBar.setRating(ratingBarDialog.getRating());
+            bottomSheetDialog.show();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    private void onBackPress(){
+        if(bottomSheetDialog.isShowing()) {
+            ratingBar.setRating(0);
+            bottomSheetDialog.dismiss();
+        }
     }
 }

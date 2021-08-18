@@ -105,6 +105,6 @@
     <string name="three_star">Good</string>
     <string name="four_star">Very good</string>
     <string name="five_star">Amazing</string>
-=======
->>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
+    <string name="thanks_for_rating">Thanks for your rating</string>
+
 </resources>

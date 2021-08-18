@@ -4,61 +4,73 @@
     android:layout_height="380dp"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="HomeActivities.Profile">
-    <LinearLayout
-        style="@style/Sub_View4.Profile_Bottom_Sheet_Parent_Layout">
-        <RelativeLayout
-            android:id="@+id/bottom_sheet_rating_bar"
-            style="@style/Sub_View4.Profile_Bottom_Sheet_Title">
-            <ImageView
-                style="@style/Sub_View1.Profile_Bottom_Sheet_Close_Button"/>
-            <TextView
-                style="@style/Sub_View1.Profile_Bottom_Sheet_Title_TextView" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_marginTop="@dimen/dimen20"
-            style="@style/Sub_View4">
-            <RatingBar
-                android:id="@+id/rating_bar_dialog"
-                android:layout_centerHorizontal="true"
-                style="@style/Sub_View1.Rating_Bar"/>
-            <TextView
-                android:id="@+id/tv_your_feedback"
-                style="@style/Sub_View1.Feedback_Title" />
-            <androidx.cardview.widget.CardView
-                style="@style/Sub_View4.CardView_Feedback_Edittext">
-                <EditText
-                    style="@style/Feedback_EditText"/>
-            </androidx.cardview.widget.CardView>
-            <Button
-                style="@style/Sub_View4.Button_Send"
-                tools:targetApi="lollipop" />
-            <LinearLayout
-                android:id="@+id/tv_emotion"
-                style="@style/Sub_View1"
-                android:layout_below="@+id/rating_bar_dialog"
-                android:layout_centerHorizontal="true"
-                android:weightSum="5">
+    <ScrollView
+        android:id="@+id/SV_Rating_Dialog"
+        style="@style/Sub_View2">
+        <LinearLayout
+            style="@style/Sub_View2.Profile_Bottom_Sheet_Parent_Layout">
+            <RelativeLayout
+                android:id="@+id/bottom_sheet_rating_bar"
+                style="@style/Sub_View4.Profile_Bottom_Sheet_Title">
+                <ImageView
+                    android:id="@+id/btn_Close_Dialog"
+                    style="@style/Sub_View1.Profile_Bottom_Sheet_Close_Button" />
                 <TextView
-                    android:id="@+id/one_star"
-                    style="@style/Sub_View1"
-                    android:layout_weight="1"/>
+                    style="@style/Sub_View1.Profile_Bottom_Sheet_Title_TextView" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dimen20"
+                style="@style/Sub_View2">
+                <RatingBar
+                    android:id="@+id/rating_bar_dialog"
+                    android:layout_centerHorizontal="true"
+                    style="@style/Sub_View1.Rating_Bar"/>
                 <TextView
-                    android:id="@+id/two_star"
-                    style="@style/Sub_View1"
-                    android:layout_weight="1"/>
-                <TextView
-                    android:id="@+id/three_star"
-                    style="@style/Sub_View1"
-                    android:layout_weight="1"/>
-                <TextView
-                    android:id="@+id/four_star"
-                    style="@style/Sub_View1"
-                    android:layout_weight="1"/>
-                <TextView
-                    android:id="@+id/five_star"
-                    style="@style/Sub_View1"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </RelativeLayout>
-    </LinearLayout>
+                    android:layout_below="@+id/rating_bar_dialog"
+                    android:id="@+id/tv_your_feedback"
+                    style="@style/Sub_View1.Feedback_Title" />
+                <androidx.cardview.widget.CardView
+                    style="@style/Sub_View4.CardView_Feedback_Edittext">
+                    <EditText
+                        android:id="@+id/edt_FeedBack"
+                        style="@style/Feedback_EditText"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_Send_FeedBack"
+                    style="@style/Sub_View4.Button_Send"
+                    android:layout_marginTop="@dimen/dimen30"
+                    tools:targetApi="lollipop" />
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/tv_emotion"-->
+<!--                    style="@style/Sub_View1"-->
+<!--                    android:layout_below="@+id/rating_bar_dialog"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:weightSum="5">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/one_star"-->
+<!--                        style="@style/Sub_View1"-->
+<!--                        android:layout_weight="1"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/two_star"-->
+<!--                        style="@style/Sub_View1"-->
+<!--                        android:layout_weight="1"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/three_star"-->
+<!--                        style="@style/Sub_View1"-->
+<!--                        android:layout_weight="1"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/four_star"-->
+<!--                        style="@style/Sub_View1"-->
+<!--                        android:layout_weight="1"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/five_star"-->
+<!--                        style="@style/Sub_View1"-->
+<!--                        android:layout_weight="1"/>-->
+<!--                </LinearLayout>-->
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>

@@ -147,8 +147,6 @@
         <item name="android:textColor">@color/banner_text</item>
         <item name="android:layout_margin">@dimen/dimen10</item>
     </style>
-=======
->>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
     <style name="Phone_Number_EditText">
         <item name="android:inputType">number</item>
         <item name="android:layout_marginTop">@dimen/dimen10</item>
@@ -408,7 +406,7 @@
         parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/profile_bottom_sheet_dialog</item>
     </style>
-    <style name="Sub_View4.Profile_Bottom_Sheet_Parent_Layout">
+    <style name="Sub_View2.Profile_Bottom_Sheet_Parent_Layout">
         <item name="android:orientation">vertical</item>
         <item name="android:layout_margin">@dimen/dimen10</item>
     </style>
@@ -418,6 +416,7 @@
     </style>
     <style name="Sub_View1.Profile_Bottom_Sheet_Close_Button">
         <item name="android:src">@drawable/img_button_close</item>
+        <item name="android:clickable">true</item>
     </style>
     <style name="Sub_View1.Profile_Bottom_Sheet_Title_TextView">
         <item name="android:layout_centerInParent">true</item>
@@ -444,12 +443,11 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/dimen100</item>
         <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginBottom">@dimen/dimen50</item>
     </style>
     <style name="Sub_View4.Button_Send">
         <item name="android:text">@string/send</item>
-        <item name="android:layout_alignParentBottom">true</item>
+<!--        <item name="android:layout_alignParentBottom">true</item>-->
         <item name="android:backgroundTint">@color/button_background</item>
-=======
->>>>>>> be95a8073c19b250768282c0fc5001f0f31477ce
     </style>
 </resources>
