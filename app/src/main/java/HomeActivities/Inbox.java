@@ -28,6 +28,10 @@ public class Inbox extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.nav_inbox:
                         return true;
+                    case R.id.nav_qr_code_scanner:
+                        startActivity(new Intent(getApplicationContext(), QRCode.class));
+                        overridePendingTransition(0,0);
+                        return true;
                     case R.id.nav_home:
                         startActivity(new Intent(getApplicationContext(), HomePage.class));
                         overridePendingTransition(0, 0);

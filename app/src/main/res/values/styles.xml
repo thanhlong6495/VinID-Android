@@ -97,6 +97,8 @@
     </style>
 
     <style name="TextView_Title">
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:layout_marginBottom">@dimen/dimen10</item>
         <item name="android:textSize">@dimen/text_size25</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textStyle">bold</item>
@@ -236,6 +238,7 @@
         <item name="android:layout_width">@dimen/dimen50</item>
     </style>
     <style name="Icon_Inbox">
+        <item name="android:layout_marginLeft">@dimen/dimen10</item>
         <item name="android:layout_height">@dimen/dimen50</item>
         <item name="android:layout_width">@dimen/dimen50</item>
         <item name="android:layout_marginRight">@dimen/dimen10</item>
@@ -344,6 +347,7 @@
         <item name="android:textSize">@dimen/text_size16</item>
     </style>
     <style name="Sub_View1.Rating_Bar" parent="Theme.AppCompat">
+        <item name="android:layout_centerHorizontal">true</item>
         <item name="android:progressTint">@color/activated_star_color</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
@@ -391,8 +395,10 @@
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:text"><![CDATA[@string/version_name]]></item>
     </style>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
 
+<!--    Profile Activity-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
     </style>
     <style name="AppBottomSheetDialogTheme"
@@ -404,9 +410,9 @@
     </style>
     <style name="AppModalStyle"
         parent="Widget.Design.BottomSheet.Modal">
-        <item name="android:background">@drawable/profile_bottom_sheet_dialog</item>
+        <item name="android:background">@drawable/profile_bottom_sheet_dialog_design</item>
     </style>
-    <style name="Sub_View2.Profile_Bottom_Sheet_Parent_Layout">
+    <style name="Sub_View4.Profile_Bottom_Sheet_Parent_Layout">
         <item name="android:orientation">vertical</item>
         <item name="android:layout_margin">@dimen/dimen10</item>
     </style>
@@ -426,17 +432,24 @@
         <item name="android:textColor">@color/black</item>
     </style>
     <style name="Sub_View1.Feedback_Title">
+        <item name="android:layout_below">@+id/tv_feedback</item>
         <item name="android:text">@string/your_feedback</item>
         <item name="android:textSize">@dimen/text_size16</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/black</item>
         <item name="layout_goneMarginTop">@dimen/dimen20</item>
-        <item name="android:layout_below">@+id/tv_emotion</item>
     </style>
     <style name="Sub_View4.CardView_Feedback_Edittext">
+        <item name="android:layout_below">@+id/tv_your_feedback</item>
         <item name="cornerRadius">@dimen/dimen15</item>
         <item name="android:layout_marginTop">@dimen/dimen20</item>
-        <item name="android:layout_below">@id/tv_your_feedback</item>
+    </style>
+    <style name="Sub_View1.TextView_FeedBack">
+        <item name="android:textSize">@dimen/text_size16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_below">@+id/rating_bar_dialog</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/dimen10</item>
     </style>
     <style name="Feedback_EditText">
         <item name="android:hint">@string/feedback_hint</item>
@@ -447,7 +460,14 @@
     </style>
     <style name="Sub_View4.Button_Send">
         <item name="android:text">@string/send</item>
-<!--        <item name="android:layout_alignParentBottom">true</item>-->
         <item name="android:backgroundTint">@color/button_background</item>
+    </style>
+<!--    QR Code Activity-->
+    <style name="Sub_View1.Button_QR_Code">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:layout_marginRight">@dimen/dimen10</item>
+        <item name="android:textSize">@dimen/text_size14</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="textAllCaps">false</item>
     </style>
 </resources>

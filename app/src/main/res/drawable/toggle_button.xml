@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/togglebutton_select"
+    <item android:drawable="@drawable/togglebutton_select_design"
         android:state_checked="true"/>
-    <item android:drawable="@drawable/togglebutton_deselect"
+    <item android:drawable="@drawable/togglebutton_unselect_design"
         android:state_checked="false"/>
 </selector>

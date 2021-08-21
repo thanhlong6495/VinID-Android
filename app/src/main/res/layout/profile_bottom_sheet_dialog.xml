@@ -8,7 +8,7 @@
         android:id="@+id/SV_Rating_Dialog"
         style="@style/Sub_View2">
         <LinearLayout
-            style="@style/Sub_View2.Profile_Bottom_Sheet_Parent_Layout">
+            style="@style/Sub_View4.Profile_Bottom_Sheet_Parent_Layout">
             <RelativeLayout
                 android:id="@+id/bottom_sheet_rating_bar"
                 style="@style/Sub_View4.Profile_Bottom_Sheet_Title">
@@ -23,10 +23,11 @@
                 style="@style/Sub_View2">
                 <RatingBar
                     android:id="@+id/rating_bar_dialog"
-                    android:layout_centerHorizontal="true"
                     style="@style/Sub_View1.Rating_Bar"/>
                 <TextView
-                    android:layout_below="@+id/rating_bar_dialog"
+                    style="@style/Sub_View1.TextView_FeedBack"
+                    android:id="@+id/tv_feedback"/>
+                <TextView
                     android:id="@+id/tv_your_feedback"
                     style="@style/Sub_View1.Feedback_Title" />
                 <androidx.cardview.widget.CardView
@@ -34,14 +35,11 @@
                     <EditText
                         android:id="@+id/edt_FeedBack"
                         style="@style/Feedback_EditText"/>
-
                 </androidx.cardview.widget.CardView>
 
                 <Button
                     android:id="@+id/btn_Send_FeedBack"
-                    style="@style/Sub_View4.Button_Send"
-                    android:layout_marginTop="@dimen/dimen30"
-                    tools:targetApi="lollipop" />
+                    style="@style/Sub_View4.Button_Send" />
 <!--                <LinearLayout-->
 <!--                    android:id="@+id/tv_emotion"-->
 <!--                    style="@style/Sub_View1"-->

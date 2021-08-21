@@ -96,10 +96,13 @@
     <string name="your_feedback">Phản hồi của bạn</string>
     <string name="feedback_hint">Vui lòng để lại gợi ý của bạn ở đây</string>
     <string name="send">Gửi</string>
-    <string name="one_star">Khá tệ</string>
+    <string name="one_star">Không tốt</string>
     <string name="two_star">Bình thường</string>
     <string name="three_star">Tốt</string>
     <string name="four_star">Rất tốt</string>
     <string name="five_star">Tuyệt vời</string>
     <string name="thanks_for_rating">Cảm ơn bạn đã đánh giá</string>
+    <string name="Code_Sacnner">Quét mã</string>
+    <string name="Using_Card">Dùng thẻ</string>
+    <string name="Payment">Thanh toán</string>
 </resources>

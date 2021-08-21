@@ -34,6 +34,7 @@ public class Profile extends AppCompatActivity {
     private BottomSheetDialog bottomSheetDialog;
     private Button buttonSendFeedBack;
     private ImageView buttonCloseDialog;
+    private TextView textViewFeedBack;
     ArrayList<Category> arrayList;
 
     @Override
@@ -48,6 +49,7 @@ public class Profile extends AppCompatActivity {
         setItemSelectedFromListener();
         initialBottomSheetDialog();
         setRatingBar();
+        setRatingBarDialog();
     }
     private void addViewToArrayList() {
         arrayList = new ArrayList<>();
@@ -80,6 +82,10 @@ public class Profile extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.nav_account:
                         return true;
+                    case R.id.nav_qr_code_scanner:
+                        startActivity(new Intent(getApplicationContext(), QRCode.class));
+                        overridePendingTransition(0,0);
+                        return true;
                     case R.id.nav_home:
                         startActivity(new Intent(getApplicationContext(), HomePage.class));
                         overridePendingTransition(0, 0);
@@ -111,6 +117,7 @@ public class Profile extends AppCompatActivity {
         ratingBarDialog = bottomSheetDialog.findViewById(R.id.rating_bar_dialog);
         buttonSendFeedBack = bottomSheetDialog.findViewById(R.id.btn_Send_FeedBack);
         buttonCloseDialog = bottomSheetDialog.findViewById(R.id.btn_Close_Dialog);
+        textViewFeedBack = bottomSheetDialog.findViewById(R.id.tv_feedback);
         ratingBarDialog.setRating(ratingBar.getRating());
         buttonSendFeedBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,9 +147,21 @@ public class Profile extends AppCompatActivity {
         ratingBar.setOnRatingBarChangeListener((ratingBar, rating, fromUser) -> {
             ratingBarDialog.setRating(ratingBar.getRating());
             switch ((int) rating) {
-                case 1 : case 2 : case 3: case 4: case 5:
-                checkStar();
-                break;
+                case 1 : case 2: case 3: case 4: case 5:
+                    checkStar();
+                    autoSetFeedBack();
+                    break;
+            }
+        });
+    }
+    private void setRatingBarDialog() {
+        ratingBarDialog.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+                switch ((int) rating){
+                    case 1: case 2: case 3: case 4: case 5:
+                        autoSetFeedBack();
+                }
             }
         });
     }
@@ -154,6 +173,18 @@ public class Profile extends AppCompatActivity {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+    private void autoSetFeedBack() {
+        if (ratingBar.getRating() == 1 || ratingBarDialog.getRating() == 1)
+            textViewFeedBack.setText(getResources().getString(R.string.one_star));
+        else if (ratingBar.getRating() == 2 || ratingBarDialog.getRating() == 2)
+            textViewFeedBack.setText(getResources().getString(R.string.two_star));
+        else if (ratingBar.getRating() == 3 || ratingBarDialog.getRating() == 3)
+            textViewFeedBack.setText(getResources().getString(R.string.three_star));
+        else if (ratingBar.getRating() == 4 || ratingBarDialog.getRating() == 4)
+            textViewFeedBack.setText(getResources().getString(R.string.four_star));
+        else if (ratingBar.getRating() == 5 || ratingBarDialog.getRating() == 5)
+            textViewFeedBack.setText(getResources().getString(R.string.five_star));
     }
     private void onBackPress(){
         if(bottomSheetDialog.isShowing()) {

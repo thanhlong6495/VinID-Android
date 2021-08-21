@@ -8,7 +8,6 @@ import android.view.MenuItem;
 import android.widget.GridView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.longtrang.vinid.R;
-import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import GridViewServices.Services;
 import GridViewServices.ServicesAdapter;
@@ -46,9 +45,13 @@ public class HomePage extends AppCompatActivity {
     private void setItemSelectedFromListener() {
         bottomNavigationItemView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.nav_home:
+                        return true;
+                    case R.id.nav_qr_code_scanner:
+                        startActivity(new Intent(getApplicationContext(), QRCode.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.nav_my_wallet:
                         startActivity(new Intent(getApplicationContext(), MyWallet.class));

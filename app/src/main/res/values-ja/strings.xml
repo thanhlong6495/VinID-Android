@@ -103,5 +103,7 @@
     <string name="four_star">とても良い</string>
     <string name="five_star">素晴らしい</string>
     <string name="thanks_for_rating">評価ありがとうございました</string>
-
+    <string name="Code_Sacnner">コード　スキャナー</string>
+    <string name="Using_Card">カード使い</string>
+    <string name="Payment">支払い</string>
 </resources>

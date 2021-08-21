@@ -28,4 +28,5 @@
     <color name="bottom_navigation_text_selected">#D61406</color>
 <!--Rating Bar    -->
     <color name="activated_star_color">#EFC908</color>
+    <color name="button_qr_code_payment">#D581EA</color>
 </resources>

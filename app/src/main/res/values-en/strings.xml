@@ -96,7 +96,7 @@
         <br>to improve our quality.</br>
     </string>
     <string name="version_name">Version: 94.6 (9500025)</string>
-    <string name="how_good_are_we">Đánh giá chất lượng dịch vụ</string>
+    <string name="how_good_are_we">Your Feedback</string>
     <string name="your_feedback">Your feedback</string>
     <string name="feedback_hint">Kindly leave your suggestion here</string>
     <string name="send">Send</string>
@@ -106,5 +106,7 @@
     <string name="four_star">Very good</string>
     <string name="five_star">Amazing</string>
     <string name="thanks_for_rating">Thanks for your rating</string>
-
+    <string name="Code_Sacnner">Code Scanner</string>
+    <string name="Using_Card">Using Card</string>
+    <string name="Payment">Payment</string>
 </resources>

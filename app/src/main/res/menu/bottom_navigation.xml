@@ -7,11 +7,9 @@
     <item android:id="@+id/nav_my_wallet"
         android:icon="@drawable/icon_wallet"
         android:title="@string/my_wallet" />
-    <item android:id="@+id/qr_code_scanner"
-        android:title=" "
-        android:icon="@drawable/icon_qr_code_scanner"
-        android:iconTint="@color/bottom_navigation_text_selected"
-        tools:targetApi="o" />
+    <item android:id="@+id/nav_qr_code_scanner"
+        android:title=""
+        android:icon="@drawable/icon_qr_code_scanner" />
     <item android:id="@+id/nav_inbox"
         android:icon="@drawable/icon_inbox"
         android:title="@string/inbox" />

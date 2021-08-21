@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Sub_View2"
+    tools:context="HomeActivities.QRCode">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        style="@style/Sub_View4.Bottom_Navigation_Bar"
+        android:id="@+id/bottom_navigation_bar">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation_bar"
+        android:weightSum="3">
+        <Button
+            android:id="@+id/btn_Code_Scanner"
+            style="@style/Sub_View1.Button_QR_Code"
+            android:layout_weight="1"
+            android:text="@string/Code_Sacnner" />
+
+        <Button
+            android:id="@+id/btn_Using_Card"
+            style="@style/Sub_View1.Button_QR_Code"
+            android:layout_weight="1"
+            android:text="@string/Using_Card" />
+        <Button
+            android:id="@+id/btn_Payment_By_Code"
+            style="@style/Sub_View1.Button_QR_Code"
+            android:layout_weight="1"
+            android:text="@string/Payment" />
+    </LinearLayout>
+
+</RelativeLayout>
