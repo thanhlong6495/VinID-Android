@@ -29,7 +29,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.journeyapps:zxing-android-embedded:4.1.0'
+    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
     implementation 'com.jakewharton:butterknife:10.2.3'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'

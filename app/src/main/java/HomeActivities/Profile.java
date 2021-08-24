@@ -3,6 +3,8 @@ package HomeActivities;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -47,7 +49,7 @@ public class Profile extends AppCompatActivity {
         setAdapter();
         bottomNavigationView.setSelectedItemId(R.id.nav_account);
         setItemSelectedFromListener();
-        initialBottomSheetDialog();
+        initializeBottomSheetDialog();
         setRatingBar();
         setRatingBarDialog();
     }
@@ -111,7 +113,7 @@ public class Profile extends AppCompatActivity {
                 defaultFullName)).append("\n").append(sharedPreferences.getString("phonenumber",
                 defaultPhoneNumber)).toString());
     }
-    private void initialBottomSheetDialog() {
+    private void initializeBottomSheetDialog() {
         bottomSheetDialog = new BottomSheetDialog(Profile.this, R.style.AppBottomSheetDialogTheme);
         bottomSheetDialog.setContentView(R.layout.profile_bottom_sheet_dialog);
         ratingBarDialog = bottomSheetDialog.findViewById(R.id.rating_bar_dialog);
@@ -119,6 +121,7 @@ public class Profile extends AppCompatActivity {
         buttonCloseDialog = bottomSheetDialog.findViewById(R.id.btn_Close_Dialog);
         textViewFeedBack = bottomSheetDialog.findViewById(R.id.tv_feedback);
         ratingBarDialog.setRating(ratingBar.getRating());
+        touchOutSideDialog(bottomSheetDialog);
         buttonSendFeedBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -141,7 +144,6 @@ public class Profile extends AppCompatActivity {
                 bottomSheetDialog.dismiss();
             }
         });
-        onBackPress();
     }
     private void setRatingBar() {
         ratingBar.setOnRatingBarChangeListener((ratingBar, rating, fromUser) -> {
@@ -175,21 +177,32 @@ public class Profile extends AppCompatActivity {
         }
     }
     private void autoSetFeedBack() {
-        if (ratingBar.getRating() == 1 || ratingBarDialog.getRating() == 1)
+        if (ratingBarDialog.getRating() == 1)
             textViewFeedBack.setText(getResources().getString(R.string.one_star));
-        else if (ratingBar.getRating() == 2 || ratingBarDialog.getRating() == 2)
+        else if (ratingBarDialog.getRating() == 2)
             textViewFeedBack.setText(getResources().getString(R.string.two_star));
-        else if (ratingBar.getRating() == 3 || ratingBarDialog.getRating() == 3)
+        else if (ratingBarDialog.getRating() == 3)
             textViewFeedBack.setText(getResources().getString(R.string.three_star));
-        else if (ratingBar.getRating() == 4 || ratingBarDialog.getRating() == 4)
+        else if (ratingBarDialog.getRating() == 4)
             textViewFeedBack.setText(getResources().getString(R.string.four_star));
-        else if (ratingBar.getRating() == 5 || ratingBarDialog.getRating() == 5)
+        else if (ratingBarDialog.getRating() == 5)
             textViewFeedBack.setText(getResources().getString(R.string.five_star));
     }
-    private void onBackPress(){
+    @Override
+    public void onBackPressed() {
         if(bottomSheetDialog.isShowing()) {
-            ratingBar.setRating(0);
             bottomSheetDialog.dismiss();
         }
+        ratingBar.setRating(0);
+        startActivity(new Intent(Profile.this,HomePage.class));
+    }
+    private void touchOutSideDialog(Dialog dialog) {
+        dialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialog) {
+                dialog.dismiss();
+                ratingBar.setRating(0);
+            }
+        });
     }
 }

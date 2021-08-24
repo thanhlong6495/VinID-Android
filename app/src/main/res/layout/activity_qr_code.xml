@@ -8,6 +8,13 @@
         android:id="@+id/bottom_navigation_bar">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
     <LinearLayout
+        android:id="@+id/show_fragment_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_list">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/button_list"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Sub_View2"
     tools:context="HomeActivities.HomePage">
-    <ScrollView
-        android:paddingBottom="@dimen/bottom_navigation_bar_height"
-        style="@style/Sub_View4">
+<!--    <ScrollView-->
+<!--        android:paddingBottom="@dimen/bottom_navigation_bar_height"-->
+<!--        style="@style/Sub_View4">-->
         <LinearLayout
             android:orientation="vertical"
             style="@style/Sub_View4">
@@ -51,7 +51,7 @@
                 style="@style/Banner_Style"
                 android:src="@drawable/banner_discount"/>
         </LinearLayout>
-    </ScrollView>
+<!--    </ScrollView>-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         style="@style/Sub_View4.Bottom_Navigation_Bar"
         android:id="@+id/bottom_navigation_bar">

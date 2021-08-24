@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Sub_View2"
+    android:layout_margin="@dimen/dimen10">
+    <TextView
+        android:id="@+id/tv_Full_Name"
+        style="@style/Sub_View1.TextView_FullName" />
+    <ImageView
+        android:id="@+id/img_Card"
+        style="@style/Sub_View1.Card_View"/>
+    <RelativeLayout
+        style="@style/Sub_View1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_Card">
+        <ImageView
+            android:id="@+id/img_Vin_Point"
+            style="@style/Sub_View1.Vin_Point_Image" />
+        <TextView
+            android:id="@+id/tv_point"
+            style="@style/Sub_View1.TextView_Point"/>
+        <TextView
+            android:id="@+id/View_Point"
+            style="@style/Sub_View1.View_Point"/>
+    </RelativeLayout>
+</RelativeLayout>

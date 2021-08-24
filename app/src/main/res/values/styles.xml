@@ -470,4 +470,42 @@
         <item name="android:textColor">@color/black</item>
         <item name="textAllCaps">false</item>
     </style>
+<!--    Payment Fragment-->
+    <style name="Sub_View1.TextView_Point">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">@string/point</item>
+        <item name="android:textSize">@dimen/text_size22</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/dimen20</item>
+        <item name="android:layout_toEndOf">@id/img_Vin_Point</item>
+    </style>
+    <style name="Sub_View1.View_Point">
+        <item name="android:layout_below">@+id/tv_point</item>
+        <item name="android:layout_toEndOf">@id/img_Vin_Point</item>
+        <item name="android:text">0</item>
+        <item name="android:textSize">@dimen/text_size20</item>
+    </style>
+    <style name="Sub_View1.Vin_Point_Image">
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:src">@drawable/vin_point</item>
+    </style>
+    <style name="Sub_View1.QR_Code_Image">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/dimen20</item>
+        <item name="android:layout_below">@+id/img_Bar_Code</item>
+        <item name="android:src">@drawable/qr_code</item>
+    </style>
+    <style name="Sub_View1.Bar_Code_Image">
+        <item name="android:src">@drawable/bar_code</item>
+    </style>
+<!--    Card View-->
+    <style name="Sub_View1.TextView_FullName">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size25</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Sub_View1.Card_View">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:src">@drawable/my_card</item>
+    </style>
 </resources>
