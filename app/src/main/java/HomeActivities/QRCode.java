@@ -36,7 +36,8 @@ public class QRCode extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qr_code); ButterKnife.bind(this);
+        setContentView(R.layout.activity_qr_code);
+        ButterKnife.bind(this);
         bottomNavigationItemView.setSelectedItemId(R.id.nav_qr_code_scanner);
         setItemSelectedFromListener();
         autoFocusButton(buttonPaymentByCode);
@@ -75,7 +76,9 @@ public class QRCode extends AppCompatActivity {
 
     @OnClick(R.id.btn_Payment_By_Code)
     protected void payment() {
-        initializeFragment(new FragmentPayment());
+        FragmentPayment fragmentPayment = new FragmentPayment();
+        initializeFragment(fragmentPayment);
+        fragmentPayment.setImageQRCode();
         buttonPaymentByCode.setBackgroundColor(ContextCompat.getColor(QRCode.this, R.color.button_qr_code_payment));
         buttonCodeScanner.setBackgroundColor(ContextCompat.getColor(QRCode.this, R.color.white));
         buttonUsingCard.setBackgroundColor(ContextCompat.getColor(QRCode.this
@@ -143,14 +146,12 @@ public class QRCode extends AppCompatActivity {
             }
         }, 200);
     }
-
     private void initializeFragment(Fragment fragment) {
         FragmentManager fragmentManager = getFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.show_fragment_place, fragment);
         fragmentTransaction.commit();
     }
-
     @Override
     public void onBackPressed() {
         finish();

@@ -2,18 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/Sub_View2"
     android:layout_margin="10dp">
-
     <ImageView
         android:id="@+id/img_Bar_Code"
         style="@style/Sub_View1.Bar_Code_Image" />
+
     <ImageView
-            android:id="@+id/img_QR_Code"
-            style="@style/Sub_View1.QR_Code_Image"/>
+        android:id="@+id/img_QR_Code"
+        style="@style/Sub_View1.QR_Code_Image" />
     <RelativeLayout
         style="@style/Sub_View1"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/img_QR_Code">
-
         <ImageView
             android:id="@+id/img_Vin_Point"
             style="@style/Sub_View1.Vin_Point_Image" />

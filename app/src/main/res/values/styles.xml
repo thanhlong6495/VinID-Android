@@ -493,7 +493,7 @@
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_marginTop">@dimen/dimen20</item>
         <item name="android:layout_below">@+id/img_Bar_Code</item>
-        <item name="android:src">@drawable/qr_code</item>
+        <item name="android:src">@drawable/my_qr_code_3</item>
     </style>
     <style name="Sub_View1.Bar_Code_Image">
         <item name="android:src">@drawable/bar_code</item>

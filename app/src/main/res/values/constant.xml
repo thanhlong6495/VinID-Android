@@ -8,4 +8,5 @@
     <integer name="My_Wallet_GridLayout_RowCount">2</integer>
     <integer name="My_Wallet_GridLayout_ColumnCount">2</integer>
     <integer name="Home_Page_GridView_NumColumns">4</integer>
+    <integer name="QR_Code_refresh">60000</integer>
 </resources>
